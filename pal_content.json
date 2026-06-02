@@ -31,7 +31,7 @@
       "comment": "v1: edit this list by hand. Each event: title, date, time, location, note.",
       "items": []
     },
-    "driveStatus": "Folders verified and IDs recorded. PDFs not yet uploaded. Once uploaded, file IDs will be harvested into fileIds."
+    "driveStatus": "All PDFs uploaded and file IDs harvested."
   },
   "lessons": [
     {
@@ -56,10 +56,10 @@
       "icebreaker": "",
       "folderId": "1cHvPF3cXA2i4p_8RP-oWjZROJVkWe4bk",
       "fileIds": {
-        "workbook": "",
-        "coachesCard": "",
-        "infographic": "",
-        "coachesInfographic": ""
+        "workbook": "1UDJgLa5vPHQlXXK8f4IngVGC5sdYA0XY",
+        "coachesCard": "15SWqgBavsA5yOZqQOZl0XfwQiZsQfCw7",
+        "infographic": "18iKiG4wgFnggomy0the2lrqwQIlKgekT",
+        "coachesInfographic": "1wO3o6yH4FfvqsWIYSbVUkNq0e9SFyv08"
       }
     },
     {
@@ -84,10 +84,10 @@
       "icebreaker": "",
       "folderId": "1HXs0F-EIIAu7mYbfDWpA0OUnmbc1JjYM",
       "fileIds": {
-        "workbook": "",
-        "coachesCard": "",
-        "infographic": "",
-        "coachesInfographic": ""
+        "workbook": "1yrRkxDAUYjwQkySriWX3Fi1Q7v8l6xQr",
+        "coachesCard": "1eXDYgeQkxSei3qb2I0MgTJyPRdSMQPBb",
+        "infographic": "15P2jbjNkgL1sdr4MfAwJkEqk01zte-Oz",
+        "coachesInfographic": "1kM2sBEZ-JIyVqREWc7F92-N8xQj-vZTy"
       }
     },
     {
@@ -112,10 +112,10 @@
       "icebreaker": "",
       "folderId": "19Dsy2_F_jYJfzh4Oxw0AZo7P5aLhTb5b",
       "fileIds": {
-        "workbook": "",
-        "coachesCard": "",
-        "infographic": "",
-        "coachesInfographic": ""
+        "workbook": "1LA_2OvClhrRzo2TqoemYWLohzZQ8Mr3O",
+        "coachesCard": "1BUSYL_3GUtm74uJQinlwPUiCOwOZuoou",
+        "infographic": "1CxLqTwKZyjPOAl0Cwt9G-sVv-4xgZlKK",
+        "coachesInfographic": "1g6DK-65K3cOXFponK9CsOUxuiFtA1axc"
       }
     },
     {
@@ -140,10 +140,10 @@
       "icebreaker": "",
       "folderId": "1ZNVgJKs9bYI9MSEJ88LicgR-m6ctbcQx",
       "fileIds": {
-        "workbook": "",
-        "coachesCard": "",
-        "infographic": "",
-        "coachesInfographic": ""
+        "workbook": "1nuMuc_selpZlIMPHKHCUdeqpt-QMWzOM",
+        "coachesCard": "15liHsaf_bxQDmXj5t_3VHq5OrSzSsQE2",
+        "infographic": "100A093dDFg0AEwDyPdlqrSqIutMRFRhM",
+        "coachesInfographic": "1PbBUcgRGog5yDqdmI-cMKVH6vyou7qDI"
       }
     },
     {
@@ -168,10 +168,10 @@
       "icebreaker": "",
       "folderId": "1UaHtIfRpR3vC-oMjbXXcmBrRvs9GCupC",
       "fileIds": {
-        "workbook": "",
-        "coachesCard": "",
-        "infographic": "",
-        "coachesInfographic": ""
+        "workbook": "1fadJZ7MtlM0W605mgiX4YbfPslCwn2_t",
+        "coachesCard": "1bwvBGUMWygYujgH52SYsaEnKwTVUIXRb",
+        "infographic": "1TEc6n0eEynXQJFMS4LvBHSVG1sYmuOOT",
+        "coachesInfographic": "1vh-gb0WEdizXmm2WsXzZ6BETD3o4GGUE"
       }
     },
     {
@@ -196,10 +196,10 @@
       "icebreaker": "",
       "folderId": "1asX2G8Ek3y8i4HwDDyguC7N8qpcb9n0R",
       "fileIds": {
-        "workbook": "",
-        "coachesCard": "",
-        "infographic": "",
-        "coachesInfographic": ""
+        "workbook": "1__h7ijWPB9tgCUziHx8fbBluT6_6pQ0V",
+        "coachesCard": "11n1TnNTOWjrWoBqUzTeX5NWpFcztnxXP",
+        "infographic": "1p-WIF-I-PP3XfF2IEM9-aLSTiE01lNKF",
+        "coachesInfographic": "1Nr6ycELVkkoh3-YRCbFn-zRbx9PT4BVf"
       }
     },
     {
@@ -224,10 +224,10 @@
       "icebreaker": "",
       "folderId": "1pGlyyOxTTkqiI1Eet0UcYL2ODAhv6yEy",
       "fileIds": {
-        "workbook": "",
-        "coachesCard": "",
-        "infographic": "",
-        "coachesInfographic": ""
+        "workbook": "11QHDi53n-5sA08M6iGyVZJ8izvSX5pYE",
+        "coachesCard": "1DgC5lgcHwP91H-Qa8VxRelRj3zcQy1BX",
+        "infographic": "1RcH1zvpnNSfxP9ylBzRoKtQfi-hai6r-",
+        "coachesInfographic": "1FnFhaeCoCdBODSiRPAfBUWkp6zcjmk-S"
       }
     },
     {
@@ -252,10 +252,10 @@
       "icebreaker": "",
       "folderId": "1evL6k-epkCi4rIA7kjzyqoJ3-Y5YQzA6",
       "fileIds": {
-        "workbook": "",
-        "coachesCard": "",
-        "infographic": "",
-        "coachesInfographic": ""
+        "workbook": "1SInBFbfqimJm3VKf_laSX31yQ1Ogwrsc",
+        "coachesCard": "1yPhdqGZ1GoJ8vofdhC53m-sIe11h51_O",
+        "infographic": "1bt0EUAUAKM7YNiRvbBqYEfbDJwK0IzBS",
+        "coachesInfographic": "13_J_7GsL2rrP8lkvzCCxiWGkUa1yFgPp"
       }
     },
     {
@@ -280,10 +280,10 @@
       "icebreaker": "",
       "folderId": "1d66VPq5nEG1roVu5PgtkW_EOjoP72Sq6",
       "fileIds": {
-        "workbook": "",
-        "coachesCard": "",
-        "infographic": "",
-        "coachesInfographic": ""
+        "workbook": "1qgZELTLCHFX5lNk3jqrkSaiA7BLVyP-r",
+        "coachesCard": "1TcfEsn8ZryLMbFB2vwiK0SRpmhQxphEE",
+        "infographic": "1MYPWxSu6NV108ksjns6OEQSWJni84GDY",
+        "coachesInfographic": "1ZUn9rkyjK6Dw9IVBecZYZ8N8oVoovUFN"
       }
     },
     {
@@ -308,10 +308,10 @@
       "icebreaker": "",
       "folderId": "1l4jqqenJW93adhX9jYgcTK5JEw6CnkNB",
       "fileIds": {
-        "workbook": "",
-        "coachesCard": "",
-        "infographic": "",
-        "coachesInfographic": ""
+        "workbook": "1obkaRlm9lfs96VDsG4fe-BvFTQbFuI5G",
+        "coachesCard": "1uX0oEfcdilREhNTDcP7AxrXbzPE5FGPu",
+        "infographic": "18vWTT3lHakEarh6QKnzOTIEkmk4r5Hl4",
+        "coachesInfographic": "1DxVhaq8ObZTOCWZa2LoRbBTP8ryiLO5G"
       }
     },
     {
@@ -336,10 +336,10 @@
       "icebreaker": "",
       "folderId": "1kAd3tHUhrk_2FM-dmtw-_7KjDf2wP2-K",
       "fileIds": {
-        "workbook": "",
-        "coachesCard": "",
-        "infographic": "",
-        "coachesInfographic": ""
+        "workbook": "1eXg4KGn2NViPpwOXQT3tFFwSAmKbjrnH",
+        "coachesCard": "1ILUctHwml1dDa0z3Ya-10Ipa8timhIEQ",
+        "infographic": "1YLU_ylzr8SLFM8YGwEC7v_ItwvOadQ6Z",
+        "coachesInfographic": "1pg0YHxCvTRyJgkDLWm2RCtD5YUfFWprz"
       }
     },
     {
@@ -364,10 +364,10 @@
       "icebreaker": "",
       "folderId": "1jU28lURpndv-CyETGW42dTS16rNzUlxz",
       "fileIds": {
-        "workbook": "",
-        "coachesCard": "",
-        "infographic": "",
-        "coachesInfographic": ""
+        "workbook": "1esNJGsp9fF3GkYhaspBWzdgYw2UHS4Eh",
+        "coachesCard": "1UDFIxg7Eo21yNF8T-Rv1paM-IiSQ9vgG",
+        "infographic": "1xQl2_eBOW8xPIsaj3tI-41W7w-Zp50iW",
+        "coachesInfographic": "1o7u-WT4RXOyI01Na8QzZzNeJStgSh6_b"
       }
     },
     {
@@ -392,10 +392,10 @@
       "icebreaker": "",
       "folderId": "1UTdvI9TMdH2P9vLbeStDOO_FxvmGdOD4",
       "fileIds": {
-        "workbook": "",
-        "coachesCard": "",
-        "infographic": "",
-        "coachesInfographic": ""
+        "workbook": "1Evqx4xXnhQ6WnyltbezTa80-qqZF7Gq6",
+        "coachesCard": "1TLLhWUY52qj1LI_CIRUKbQX191m4C9Hv",
+        "infographic": "1yG6wularR-JCX4XALRO09XWZSJaHjHa9",
+        "coachesInfographic": "1Z6lFSp5x4MiPmcDH2LcxMfEyq5Pb7sV6"
       }
     },
     {
@@ -420,10 +420,10 @@
       "icebreaker": "",
       "folderId": "1XmS9NuGFS6XDF7kN6WwPV9NxMRMGunEm",
       "fileIds": {
-        "workbook": "",
-        "coachesCard": "",
-        "infographic": "",
-        "coachesInfographic": ""
+        "workbook": "1xWioKxJkrVcA1FmEb8DsnLgu19jK1lsB",
+        "coachesCard": "1G1C3V74iHKsTsBLjaSUIKAnAis-YluhD",
+        "infographic": "1ieUoMYssXaFhzGCJIF7isGkYofo9Yq9U",
+        "coachesInfographic": "1tQ3cKHatA17rYHGLp4061FKT6o4k2n2j"
       }
     },
     {
@@ -448,10 +448,10 @@
       "icebreaker": "",
       "folderId": "1HtSTPDdwcU5ksKK7ueTp5IIPPaDu5Fi4",
       "fileIds": {
-        "workbook": "",
-        "coachesCard": "",
-        "infographic": "",
-        "coachesInfographic": ""
+        "workbook": "1tMRAVBFOE_0mdUSMwXeC3BO8bmyi6z8L",
+        "coachesCard": "1Z57dTAh7H76-LAfUHym-j-AXSrUw6I5W",
+        "infographic": "180KFvROZumKA3xpVhdmqAiLgwSnUKU67",
+        "coachesInfographic": "1frVO2AgsASil_i_-WYQIup5kpVL-Doyv"
       }
     },
     {
@@ -476,10 +476,10 @@
       "icebreaker": "",
       "folderId": "1-NMYnUdfDf_zEip4dV6pUtBQMvChMI2M",
       "fileIds": {
-        "workbook": "",
-        "coachesCard": "",
-        "infographic": "",
-        "coachesInfographic": ""
+        "workbook": "1KBD4thX0VGC79V-ccoN4XJgunYnCXwUy",
+        "coachesCard": "1XI04u7IVRqLXcmF2Usn3_yqU2wwtzg5K",
+        "infographic": "16s0MtJ5_FGHdbvtVHw3F78HV1BVEcvMz",
+        "coachesInfographic": "1zjo4s0TVBTlZarf3XkJuIcSCuWL0synH"
       }
     }
   ]
