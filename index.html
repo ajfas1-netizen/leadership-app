@@ -522,9 +522,9 @@ function docLink(id, label){ return id
   ? '<a class="docrow" href="'+driveUrl(id)+'" target="_blank"><span>'+label+'</span><span class="dl">PDF &rarr;</span></a>'
   : '<div class="docrow"><span>'+label+'</span><span class="dl missing">Not uploaded</span></div>'; }
 
-// Auto-calculate current lesson: Week 1 starts Wed June 3, 2026, cycles 1–16
+// Auto-calculate current lesson: Week 1 starts Sun May 31, 2026, changes every Sunday midnight
 function currentWeek(){
-  const start = new Date('2026-06-03T00:00:00-04:00'); // Week 1 Wednesday, Eastern
+  const start = new Date('2026-05-31T00:00:00-04:00'); // Week 1 Sunday, Eastern
   const now = new Date();
   const msPerWeek = 7 * 24 * 60 * 60 * 1000;
   const weeksElapsed = Math.floor((now - start) / msPerWeek);
