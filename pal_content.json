@@ -29,7 +29,22 @@
     "events": {
       "source": "manual",
       "comment": "v1: edit this list by hand. Each event: title, date, time, location, note.",
-      "items": []
+      "items": [
+        {
+          "title": "Operation Nutcracker 2026: Christmas in July Kickoff",
+          "date": "Thu Jul 23",
+          "time": "6:00 – 9:00 PM",
+          "location": "",
+          "note": "Cocktails, light bites, networking, and early sponsorship opportunities. Supporting Martin County PAL youth programs."
+        },
+        {
+          "title": "Jeep Riddle Run",
+          "date": "Sat Sep 19",
+          "time": "9:00 AM – 1:00 PM",
+          "location": "Starting location TBA",
+          "note": "Scavenger-style Jeep run supporting our Youth Mobile Training Unit. Trophies, prizes, costume awards, all paved roads."
+        }
+      ]
     },
     "driveStatus": "All PDFs uploaded and file IDs harvested."
   },
