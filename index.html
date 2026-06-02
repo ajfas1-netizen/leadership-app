@@ -61,6 +61,18 @@ input::placeholder{color:rgba(245,242,232,.45)}
   background:rgba(255,255,255,.05);border-radius:10px;padding:14px;margin:8px 0;font-size:15px}
 .docrow .dl{color:var(--gold);font-family:'Oswald';font-weight:600;font-size:13px;letter-spacing:1px}
 a.docrow{text-decoration:none;color:var(--cream)}
+.time-btns{display:flex;gap:8px;margin:10px 0}
+.time-btn{flex:1;padding:12px 8px;border-radius:10px;border:2px solid var(--gold);background:transparent;
+  color:var(--gold-lt);font-family:'Oswald';font-weight:600;font-size:16px;letter-spacing:1px;cursor:pointer;
+  text-align:center;transition:background .15s,color .15s}
+.time-btn.active{background:var(--gold);color:var(--ink)}
+.ib-detail{margin-top:12px}
+.ib-detail h3{font-size:20px;color:var(--gold-lt);margin-bottom:8px}
+.ib-field{margin-bottom:10px;font-size:15px;line-height:1.5}
+.ib-field strong{color:var(--gold);font-family:'Oswald';font-weight:600;letter-spacing:1px;
+  text-transform:uppercase;font-size:13px;display:block;margin-bottom:2px}
+.affirm-text{font-style:italic;font-size:17px;line-height:1.6;color:var(--cream);opacity:.95;
+  padding:14px 16px;background:rgba(216,168,72,.12);border-left:4px solid var(--gold);border-radius:8px}
 .hidden{display:none}
 .vidcard{display:flex;align-items:center;gap:14px;text-decoration:none;background:#000;
   border:1px solid rgba(216,168,72,.4);border-radius:12px;padding:18px 16px;color:var(--cream)}
@@ -94,7 +106,7 @@ a.docrow{text-decoration:none;color:var(--cream)}
   <div class="foot">Martin County PAL Leadership &middot; Preview build<br>This is a working prototype. Some pieces are demo-only until the full build.</div>
 </div>
 <script>
-const CFG = {"currentLesson": 1, "website": "https://martincountypal.org", "youtube": "https://www.youtube.com/@MartinCountyPALLeadershp", "attendanceTarget": 16, "window": {"timezone": "America/New_York", "day": "Wednesday", "open": "17:30", "close": "19:30", "coachOverride": true, "note": "Window must be checked against a trusted time source, not the device clock, or it can be bypassed by changing the phone time. Coach override can manually open/close."}, "lessons": [{"number": 1, "name": "Choices", "word": "Choices", "takeaway": "Your next choice is greater than your last mistake.", "action": "Before one decision this week, pause and ask if it moves you toward who you want to be.", "brief": "rQEdgsx6SZ4", "parent": "KhavCfOc2P4", "corner": "Ah1ri5_9hTc", "coachBrief": "", "icebreaker": "", "folderId": "1cHvPF3cXA2i4p_8RP-oWjZROJVkWe4bk"}, {"number": 2, "name": "Growth", "word": "Growth", "takeaway": "Growth is a choice you make daily, not something that happens to you.", "action": "Pick one small thing to get better at this week and practice it once a day.", "brief": "9ddyr6M6xJ0", "parent": "0ay3AxTr524", "corner": "lT8w5x_H8ow", "coachBrief": "vv6WmbzM3s8", "icebreaker": "", "folderId": "1HXs0F-EIIAu7mYbfDWpA0OUnmbc1JjYM"}, {"number": 3, "name": "Attitude", "word": "Attitude", "takeaway": "Your attitude is the one thing you control, even when the situation is not.", "action": "When something goes wrong this week, catch your first reaction and choose a better one.", "brief": "eZzZVp8Epm0", "parent": "q5cRHji70DY", "corner": "Caox-MMh-lI", "coachBrief": "L7VnTKMtOJU", "icebreaker": "", "folderId": "19Dsy2_F_jYJfzh4Oxw0AZo7P5aLhTb5b"}, {"number": 4, "name": "Commitment", "word": "Commitment", "takeaway": "Commitment is what you keep doing after the excitement wears off.", "action": "Finish one thing this week you would normally quit halfway through.", "brief": "rh10DQTlSyw", "parent": "ZxVVeX2H30o", "corner": "WZRz1Z33HA0", "coachBrief": "5KxdHwaVns0", "icebreaker": "", "folderId": "1ZNVgJKs9bYI9MSEJ88LicgR-m6ctbcQx"}, {"number": 5, "name": "Relationships", "word": "Relationships", "takeaway": "The way you treat people is the clearest picture of who you are.", "action": "Reach out to one person this week and ask how they are actually doing.", "brief": "VqR3ElljWAY", "parent": "aL20EHj-BS8", "corner": "KTtY4ATYRbQ", "coachBrief": "-dcHjYnf8hg", "icebreaker": "", "folderId": "1UaHtIfRpR3vC-oMjbXXcmBrRvs9GCupC"}, {"number": 6, "name": "Character", "word": "Character", "takeaway": "Character is who you are when no one is watching.", "action": "Do one right thing this week that nobody will know about.", "brief": "tr6G00VdwvM", "parent": "", "corner": "juG2C3atu8U", "coachBrief": "N84r6mIydds", "icebreaker": "", "folderId": "1asX2G8Ek3y8i4HwDDyguC7N8qpcb9n0R"}, {"number": 7, "name": "Forgiveness", "word": "Forgiveness", "takeaway": "Holding a grudge costs you more than it costs the person you are mad at.", "action": "Let go of one thing you have been holding against someone, even if only in your own head.", "brief": "Z6GYQygkg2o", "parent": "9XLXxnlm8kk", "corner": "tPKR5_VP6-k", "coachBrief": "dJ1ufIShrAU", "icebreaker": "", "folderId": "1pGlyyOxTTkqiI1Eet0UcYL2ODAhv6yEy"}, {"number": 8, "name": "Self-Worth", "word": "Self-Worth", "takeaway": "Your value is not based on what other people say about you.", "action": "Write down one thing you respect about yourself and read it when you feel low.", "brief": "t80xDNeHC0U", "parent": "lBz0iUmv9OU", "corner": "w5k4OCANVGM", "coachBrief": "uBIiX0Pdbok", "icebreaker": "", "folderId": "1evL6k-epkCi4rIA7kjzyqoJ3-Y5YQzA6"}, {"number": 9, "name": "Responsibility", "word": "Responsibility", "takeaway": "Owning your part is the first step to changing your situation.", "action": "Take responsibility for one thing this week instead of blaming someone else.", "brief": "iXBMM-2aItw", "parent": "", "corner": "OMJGQwgFk5M", "coachBrief": "3kTqnoMxf3E", "icebreaker": "", "folderId": "1d66VPq5nEG1roVu5PgtkW_EOjoP72Sq6"}, {"number": 10, "name": "Courage", "word": "Courage", "takeaway": "Courage is not the absence of fear, it is acting anyway.", "action": "Do one thing this week that scares you a little but is the right move.", "brief": "Mu15T5nHS_0", "parent": "cSvAfOdvzp4", "corner": "U_tPEHyLbM0", "coachBrief": "fGdZCSHIRdQ", "icebreaker": "", "folderId": "1l4jqqenJW93adhX9jYgcTK5JEw6CnkNB"}, {"number": 11, "name": "Initiative", "word": "Initiative", "takeaway": "Do not wait to be told. See what needs doing and do it.", "action": "Start one thing this week without being asked.", "brief": "aE-R5BHYRjY", "parent": "RLOWO9P-VZI", "corner": "vncw6DVNPMQ", "coachBrief": "03avRqmKksg", "icebreaker": "", "folderId": "1kAd3tHUhrk_2FM-dmtw-_7KjDf2wP2-K"}, {"number": 12, "name": "Priorities", "word": "Priorities", "takeaway": "You cannot do everything, so choose what matters most.", "action": "Pick the most important thing in your week and do it first, before the easy stuff.", "brief": "rrlhh3KP5Qs", "parent": "I0KmbZkdhO8", "corner": "mGfQVFCZLeE", "coachBrief": "ZHmJI_JRPgM", "icebreaker": "", "folderId": "1jU28lURpndv-CyETGW42dTS16rNzUlxz"}, {"number": 13, "name": "Teachability", "word": "Teachability", "takeaway": "The day you think you know it all is the day you stop growing.", "action": "Ask someone to teach you something this week and actually listen.", "brief": "YCxBHpiDtXI", "parent": "tV2uuU4q21U", "corner": "hSpkbe6SgPU", "coachBrief": "ba-eLs_kB44", "icebreaker": "", "folderId": "1UTdvI9TMdH2P9vLbeStDOO_FxvmGdOD4"}, {"number": 14, "name": "Self-Discipline", "word": "Self-Discipline", "takeaway": "Discipline is choosing what you want most over what you want right now.", "action": "Say no to one easy distraction this week to get to something better.", "brief": "95zMKrG3TLk", "parent": "-vxVjzaj4k4", "corner": "KxeVP977F7s", "coachBrief": "moG9b8NMmuA", "icebreaker": "", "folderId": "1XmS9NuGFS6XDF7kN6WwPV9NxMRMGunEm"}, {"number": 15, "name": "Resilience", "word": "Resilience", "takeaway": "You are not measured by how hard you fall, but by how you get back up.", "action": "When something knocks you down this week, name one way you will get back up.", "brief": "", "parent": "hlM4PRPOJJ8", "corner": "", "coachBrief": "Donx4Og7q8k", "icebreaker": "", "folderId": "1HtSTPDdwcU5ksKK7ueTp5IIPPaDu5Fi4"}, {"number": 16, "name": "Influence", "word": "Influence", "takeaway": "You are leading someone whether you mean to or not.", "action": "Set one example this week you would be proud for a younger kid to copy.", "brief": "", "parent": "3mAbydxPmfM", "corner": "zbhqZ9UbvII", "coachBrief": "", "icebreaker": "", "folderId": "1-NMYnUdfDf_zEip4dV6pUtBQMvChMI2M"}], "events": [{"date": "Wed Jun 4", "time": "6:00 PM", "title": "Leadership Session: Choices", "location": "PAL Center", "note": ""}, {"date": "Sat Jun 14", "time": "10:00 AM", "title": "Palapalooza Fundraiser", "location": "Community Park", "note": "Family welcome"}]};
+const CFG = {"currentLesson": 1, "website": "https://martincountypal.org", "youtube": "https://www.youtube.com/@MartinCountyPALLeadershp", "attendanceTarget": 16, "window": {"timezone": "America/New_York", "day": "Wednesday", "open": "17:30", "close": "19:30", "coachOverride": true, "note": "Window must be checked against a trusted time source, not the device clock, or it can be bypassed by changing the phone time. Coach override can manually open/close."}, "lessons": [{"number": 1, "name": "Choices", "word": "Choices", "takeaway": "Your next choice is greater than your last mistake.", "action": "Before one decision this week, pause and ask if it moves you toward who you want to be.", "brief": "rQEdgsx6SZ4", "parent": "KhavCfOc2P4", "corner": "Ah1ri5_9hTc", "coachBrief": "KXsgH2MIr8U", "icebreaker": "", "folderId": "1cHvPF3cXA2i4p_8RP-oWjZROJVkWe4bk"}, {"number": 2, "name": "Growth", "word": "Growth", "takeaway": "Growth is a choice you make daily, not something that happens to you.", "action": "Pick one small thing to get better at this week and practice it once a day.", "brief": "9ddyr6M6xJ0", "parent": "0ay3AxTr524", "corner": "lT8w5x_H8ow", "coachBrief": "vv6WmbzM3s8", "icebreaker": "", "folderId": "1HXs0F-EIIAu7mYbfDWpA0OUnmbc1JjYM"}, {"number": 3, "name": "Attitude", "word": "Attitude", "takeaway": "Your attitude is the one thing you control, even when the situation is not.", "action": "When something goes wrong this week, catch your first reaction and choose a better one.", "brief": "eZzZVp8Epm0", "parent": "q5cRHji70DY", "corner": "Caox-MMh-lI", "coachBrief": "L7VnTKMtOJU", "icebreaker": "", "folderId": "19Dsy2_F_jYJfzh4Oxw0AZo7P5aLhTb5b"}, {"number": 4, "name": "Commitment", "word": "Commitment", "takeaway": "Commitment is what you keep doing after the excitement wears off.", "action": "Finish one thing this week you would normally quit halfway through.", "brief": "rh10DQTlSyw", "parent": "ZxVVeX2H30o", "corner": "WZRz1Z33HA0", "coachBrief": "5KxdHwaVns0", "icebreaker": "", "folderId": "1ZNVgJKs9bYI9MSEJ88LicgR-m6ctbcQx"}, {"number": 5, "name": "Relationships", "word": "Relationships", "takeaway": "The way you treat people is the clearest picture of who you are.", "action": "Reach out to one person this week and ask how they are actually doing.", "brief": "VqR3ElljWAY", "parent": "aL20EHj-BS8", "corner": "KTtY4ATYRbQ", "coachBrief": "-dcHjYnf8hg", "icebreaker": "", "folderId": "1UaHtIfRpR3vC-oMjbXXcmBrRvs9GCupC"}, {"number": 6, "name": "Character", "word": "Character", "takeaway": "Character is who you are when no one is watching.", "action": "Do one right thing this week that nobody will know about.", "brief": "tr6G00VdwvM", "parent": "", "corner": "juG2C3atu8U", "coachBrief": "N84r6mIydds", "icebreaker": "", "folderId": "1asX2G8Ek3y8i4HwDDyguC7N8qpcb9n0R"}, {"number": 7, "name": "Forgiveness", "word": "Forgiveness", "takeaway": "Holding a grudge costs you more than it costs the person you are mad at.", "action": "Let go of one thing you have been holding against someone, even if only in your own head.", "brief": "Z6GYQygkg2o", "parent": "9XLXxnlm8kk", "corner": "tPKR5_VP6-k", "coachBrief": "dJ1ufIShrAU", "icebreaker": "", "folderId": "1pGlyyOxTTkqiI1Eet0UcYL2ODAhv6yEy"}, {"number": 8, "name": "Self-Worth", "word": "Self-Worth", "takeaway": "Your value is not based on what other people say about you.", "action": "Write down one thing you respect about yourself and read it when you feel low.", "brief": "t80xDNeHC0U", "parent": "lBz0iUmv9OU", "corner": "w5k4OCANVGM", "coachBrief": "uBIiX0Pdbok", "icebreaker": "", "folderId": "1evL6k-epkCi4rIA7kjzyqoJ3-Y5YQzA6"}, {"number": 9, "name": "Responsibility", "word": "Responsibility", "takeaway": "Owning your part is the first step to changing your situation.", "action": "Take responsibility for one thing this week instead of blaming someone else.", "brief": "iXBMM-2aItw", "parent": "", "corner": "OMJGQwgFk5M", "coachBrief": "3kTqnoMxf3E", "icebreaker": "", "folderId": "1d66VPq5nEG1roVu5PgtkW_EOjoP72Sq6"}, {"number": 10, "name": "Courage", "word": "Courage", "takeaway": "Courage is not the absence of fear, it is acting anyway.", "action": "Do one thing this week that scares you a little but is the right move.", "brief": "Mu15T5nHS_0", "parent": "cSvAfOdvzp4", "corner": "U_tPEHyLbM0", "coachBrief": "fGdZCSHIRdQ", "icebreaker": "", "folderId": "1l4jqqenJW93adhX9jYgcTK5JEw6CnkNB"}, {"number": 11, "name": "Initiative", "word": "Initiative", "takeaway": "Do not wait to be told. See what needs doing and do it.", "action": "Start one thing this week without being asked.", "brief": "aE-R5BHYRjY", "parent": "RLOWO9P-VZI", "corner": "vncw6DVNPMQ", "coachBrief": "03avRqmKksg", "icebreaker": "", "folderId": "1kAd3tHUhrk_2FM-dmtw-_7KjDf2wP2-K"}, {"number": 12, "name": "Priorities", "word": "Priorities", "takeaway": "You cannot do everything, so choose what matters most.", "action": "Pick the most important thing in your week and do it first, before the easy stuff.", "brief": "rrlhh3KP5Qs", "parent": "I0KmbZkdhO8", "corner": "mGfQVFCZLeE", "coachBrief": "ZHmJI_JRPgM", "icebreaker": "", "folderId": "1jU28lURpndv-CyETGW42dTS16rNzUlxz"}, {"number": 13, "name": "Teachability", "word": "Teachability", "takeaway": "The day you think you know it all is the day you stop growing.", "action": "Ask someone to teach you something this week and actually listen.", "brief": "YCxBHpiDtXI", "parent": "tV2uuU4q21U", "corner": "hSpkbe6SgPU", "coachBrief": "ba-eLs_kB44", "icebreaker": "", "folderId": "1UTdvI9TMdH2P9vLbeStDOO_FxvmGdOD4"}, {"number": 14, "name": "Self-Discipline", "word": "Self-Discipline", "takeaway": "Discipline is choosing what you want most over what you want right now.", "action": "Say no to one easy distraction this week to get to something better.", "brief": "95zMKrG3TLk", "parent": "-vxVjzaj4k4", "corner": "KxeVP977F7s", "coachBrief": "moG9b8NMmuA", "icebreaker": "", "folderId": "1XmS9NuGFS6XDF7kN6WwPV9NxMRMGunEm"}, {"number": 15, "name": "Resilience", "word": "Resilience", "takeaway": "You are not measured by how hard you fall, but by how you get back up.", "action": "When something knocks you down this week, name one way you will get back up.", "brief": "t8FCVpKlBy8", "parent": "hlM4PRPOJJ8", "corner": "U6XSfL3ZzzM", "coachBrief": "Donx4Og7q8k", "icebreaker": "", "folderId": "1HtSTPDdwcU5ksKK7ueTp5IIPPaDu5Fi4"}, {"number": 16, "name": "Influence", "word": "Influence", "takeaway": "You are leading someone whether you mean to or not.", "action": "Set one example this week you would be proud for a younger kid to copy.", "brief": "CwWHJCRHVxA", "parent": "3mAbydxPmfM", "corner": "zbhqZ9UbvII", "coachBrief": "R6VX4pQ1rEo", "icebreaker": "", "folderId": "1-NMYnUdfDf_zEip4dV6pUtBQMvChMI2M"}], "events": [{"date": "Wed Jun 4", "time": "6:00 PM", "title": "Leadership Session: Choices", "location": "PAL Center", "note": ""}, {"date": "Sat Jun 14", "time": "10:00 AM", "title": "Palapalooza Fundraiser", "location": "Community Park", "note": "Family welcome"}]};
 // File IDs harvested from Google Drive
 const FILE_IDS = {
   1:  {workbook:"1UDJgLa5vPHQlXXK8f4IngVGC5sdYA0XY",coachesCard:"15SWqgBavsA5yOZqQOZl0XfwQiZsQfCw7",infographic:"18iKiG4wgFnggomy0the2lrqwQIlKgekT",coachesInfographic:"1wO3o6yH4FfvqsWIYSbVUkNq0e9SFyv08"},
@@ -114,13 +126,411 @@ const FILE_IDS = {
   15: {workbook:"1tMRAVBFOE_0mdUSMwXeC3BO8bmyi6z8L",coachesCard:"1Z57dTAh7H76-LAfUHym-j-AXSrUw6I5W",infographic:"180KFvROZumKA3xpVhdmqAiLgwSnUKU67",coachesInfographic:"1frVO2AgsASil_i_-WYQIup5kpVL-Doyv"},
   16: {workbook:"1KBD4thX0VGC79V-ccoN4XJgunYnCXwUy",coachesCard:"1XI04u7IVRqLXcmF2Usn3_yqU2wwtzg5K",infographic:"16s0MtJ5_FGHdbvtVHw3F78HV1BVEcvMz",coachesInfographic:"1zjo4s0TVBTlZarf3XkJuIcSCuWL0synH"}
 };
-CFG.lessons.forEach(l => { l.fileIds = FILE_IDS[l.number]; });
+const ICEBREAKERS = {
+  1: {
+    "5": {
+      title: "Hands on the Wheel",
+      objective: "Get the youth to feel the difference between deciding for themselves and letting someone else decide.",
+      setup: "Whole group standing in open gym space. No supplies.",
+      instructions: "Call out a simple either or pick (left or right, sit or stand, ball or no ball). On go, everyone moves to their choice. Run it fast for five or six rounds. Then run one round where you say I will pick for you and just point everyone the same direction with no say in it.",
+      debrief: "Which felt better, picking or getting picked for? Where in real life do you let someone else point you? What happens when you do not grab the wheel?"
+    },
+    "10": {
+      title: "The Fork",
+      objective: "Show that choices stack and steer where you end up.",
+      setup: "Two cones marking two paths, open floor. Youth start on a baseline.",
+      instructions: "Read a simple scenario with two options, like a friend wants you to bounce when you said you would stay, do you go or stay. Youth walk to the cone that matches their pick. After each round, those cones become the new starting points and you read a new fork, so their path literally builds across the floor from their stacked choices. Run four or five forks.",
+      debrief: "Did everybody end up in the same spot? Why not? Could you have ended somewhere else with a different pick early on? What is one fork coming up in your real life?"
+    },
+    "15": {
+      title: "Rewrite the Play",
+      objective: "Drive home that a past choice does not lock the next one. Choices can be changed.",
+      setup: "Groups of four to six, scattered around the gym. No supplies.",
+      instructions: "Each group gets two minutes to act out or just talk through a quick scene of a choice that went sideways. Stop them. Then the same group replays the same setup but changes one choice partway through to send it a different direction. Each group shows their rewrite to one mentor, or to the room if they are up for it.",
+      debrief: "What was the one choice that changed the whole ending? In real life, what is a play you would run back differently? Who decides whether you get a do over, you or the situation?"
+    }
+  },
+  2: {
+    "5": {
+      title: "Underground",
+      objective: "Make the invisible part of growth real. You grow before it shows.",
+      setup: "Whole group in open gym space. No supplies.",
+      instructions: "Everyone crouches down low to the floor as a seed. Call out things that feed growth, like showing up, putting in work, good people around you, and on each one everyone rises a little. Then call out things that stunt it, like quitting, a bad circle, giving up after one setback, and everyone drops back down. Run it quick. End standing tall after a string of growth calls.",
+      debrief: "How long were you down before you got to stand? Did standing happen all at once or bit by bit? What feeds your growth in real life?"
+    },
+    "10": {
+      title: "Good Soil, Bad Soil",
+      objective: "Show that environment decides whether the seed grows. Your circle is your soil.",
+      setup: "Two zones marked with cones at opposite ends of the gym, one good soil and one bad soil, open middle.",
+      instructions: "Read out one influence at a time, like a friend who hypes your goals, a habit that wastes your whole day, someone who calls you out when you slip, a group that drags you into trouble. For each one, youth jog to the soil zone where that influence belongs. After a few rounds, ask them to go stand in the soil they actually spend most of their time in right now. No judgment, just where they stand.",
+      debrief: "Was it easy or hard to call where each influence goes? Which soil are you planted in most? What is one thing you could move from bad soil to good?"
+    },
+    "15": {
+      title: "Reintroduce Yourself",
+      objective: "Tie growth to reinvention. You are not stuck as who you were.",
+      setup: "Pairs or groups of three, scattered around the gym. No supplies.",
+      instructions: "Each youth takes a turn finishing two lines out loud to their partner: A year ago I was the kind of person who, and, a year from now when you meet me you will meet someone who. Partners just listen, no clowning. Then, if any are willing, a few share the second line with the whole room. Mentors go first to set the tone and show it is not soft to say it.",
+      debrief: "Was it harder to say the first line or the second? What is one small thing you can do this week to make the second line true? Who in here is going to help you get there?"
+    }
+  },
+  3: {
+    "5": {
+      title: "Shake It Off, Step Up",
+      objective: "Put the donkey\'s move in their body before they talk about it.",
+      setup: "Whole group standing in open gym space. No supplies.",
+      instructions: "Call out a piece of dirt that life throws, like somebody talked about you, you failed a test, plans fell through, somebody let you down. On each one, the whole group does the donkey move: a quick shake of the shoulders like shaking dirt off, then one big step forward. Run it fast, six or seven rounds, so they are physically stepping across the gym on the dirt.",
+      debrief: "Did you notice you ended up further ahead than where you started? Where did all those steps come from? What is the real-life version of shaking it off and stepping up?"
+    },
+    "10": {
+      title: "24 Hours",
+      objective: "Practice the difference between sitting in something and resetting from it.",
+      setup: "Two lines on the floor or two cones a few feet apart. One side is in it, the other is stepping out. Open space.",
+      instructions: "Read a real setback, like you got blamed for something you did not do, or somebody embarrassed you. Everyone starts on the in it side and gets ten seconds to actually say or show how mad that makes them, out loud, no holding back. Then call time, and everyone steps to the stepping out side and says one thing they would do next to climb out of it. Run three or four rounds.",
+      debrief: "Which side felt more natural to you? Was ten seconds enough to be mad, or do you usually live on the in it side a lot longer? What does crossing that line actually look like in your week?"
+    },
+    "15": {
+      title: "The One Thing They Can\'t Take",
+      objective: "Land the idea that the response is the one thing fully theirs.",
+      setup: "Groups of four to six, scattered around the gym. No supplies.",
+      instructions: "Each group gets a scenario where almost everything is out of the kid\'s control, like getting moved to a new school, a plan getting canceled, somebody making a call that affected them. The group lists out loud everything in that scenario the kid cannot control, then names the one thing he still can, his response. Each group shares their one thing with the room. Push them to get specific about what stepping up would actually look like in that scenario.",
+      debrief: "Was it easier to list what you cannot control or what you can? In your own life right now, what is mostly out of your hands? What is the one thing that is still yours?"
+    }
+  },
+  4: {
+    "5": {
+      title: "Interested or Committed",
+      objective: "Make the interest versus commitment line physical and fast.",
+      setup: "Whole group in open gym space. Two sides, one labeled Interested, one labeled Committed. No supplies.",
+      instructions: "Read a scenario, like you said you would work out but it is cold out, you said you would help a friend but you are tired, you promised to show up but something better came up. Youth move to the side that shows what most people do versus what a committed person does. Quick back and forth each round about who chose which and why. Run four or five rounds.",
+      debrief: "Was it easier to land on interested or committed in these? Where in your life are you interested when you should be committed? Who has been committed to you?"
+    },
+    "10": {
+      title: "The Cycle",
+      objective: "Walk them through Test, Fail, Learn, Improve, Re-enter so Fail feels normal, not final.",
+      setup: "Five spots marked with cones around the gym, one for each stage of the cycle. Open space.",
+      instructions: "Name a real goal a kid might have, like make a team, pass a class, fix a relationship. The group physically walks the cycle cone to cone: Test (you try), Fail (it does not work), Learn (what went wrong), Improve (what you would do different), Re-enter (you try again). Walk it twice so they feel the loop. Hammer the point that the cycle does not end at Fail, it keeps moving to Re-enter.",
+      debrief: "Which stage do most people quit at? Which stage are you best at? Which one do you skip? What does Re-enter look like for you right now?"
+    },
+    "15": {
+      title: "Get Back In",
+      objective: "Tie commitment to their real life by naming a race they will re-enter.",
+      setup: "Pairs or groups of three, scattered around the gym. No supplies.",
+      instructions: "Each youth tells their partner about one thing they started and fell off of, no judgment from anyone. Then they finish two lines out loud: I fell off because, and, I am getting back in by. The partner\'s only job is to say back, you are getting back in, like a teammate. Then any who want can say their get back in line to the whole room. Mentors go first.",
+      debrief: "Was it harder to admit you fell off or to say how you would get back in? What is one small first step to re-enter this week? Who in this room can help you stay in the race?"
+    }
+  },
+  5: {
+    "5": {
+      title: "Wall or Bridge",
+      objective: "Make the wall versus bridge choice physical and quick.",
+      setup: "Whole group in open gym space. Two sides, one Wall, one Bridge. No supplies.",
+      instructions: "Read a situation, like somebody new walks up to your group, a friend texts that he is having a bad day, somebody tries to talk to you in line. Youth move to Wall if their gut says shut it down, or Bridge if their gut says let them in. No wrong answers. Quick talk each round about why, and point out that walls make sense sometimes. Run four or five rounds.",
+      debrief: "When does a wall actually make sense? When did a wall cost you something good? What is one place you put up a wall that maybe deserved a bridge?"
+    },
+    "10": {
+      title: "Tell Me Your Story",
+      objective: "Practice the single most useful bridge skill, asking and listening.",
+      setup: "Pairs, scattered around the gym. No supplies.",
+      instructions: "Each youth gets ninety seconds to ask their partner real questions and learn their story, no phones, just talking. Then they switch. After both have gone, each person has to tell the room or a mentor one real thing they learned about their partner. The point they feel is simple: somebody actually paid attention to them.",
+      debrief: "How did it feel to have someone actually listen to you? Was it easier to ask or to answer? When is the last time somebody asked about you and meant it?"
+    },
+    "15": {
+      title: "Build the Bridge",
+      objective: "Connect the metaphor to a real relationship they want to build or repair.",
+      setup: "Groups of four to six, scattered around the gym. No supplies.",
+      instructions: "Each youth thinks of one bridge they want to build or rebuild, a friend they fell out with, a family member, somebody they want in their corner. In the small group they each say who it is and name the first plank, the one small thing they could do this week to start. The group reacts like a crew, gives one piece of real advice or backs the plan. A few share with the room if they want. Mentors go first.",
+      debrief: "Why did that bridge break down or never get built? What is the first plank, the smallest first move? What is one bridge that is worth the effort even when it is hard?"
+    }
+  },
+  6: {
+    "5": {
+      title: "Cameras Off",
+      objective: "Make the difference between the show and the real you concrete and fast.",
+      setup: "Whole group in open gym space. Two sides, one For Show, one For Real. No supplies.",
+      instructions: "Name an action, like you help somebody when the whole room is watching, you help somebody when nobody sees, you keep your word only when there is something in it for you, you keep it when there is nothing. Youth move to For Show or For Real based on what most people do versus what a person of character does. Quick talk each round. Run four or five rounds.",
+      debrief: "Which is harder, doing right for show or doing right when nobody sees? Where in your life are you running on show? What would change if you were the same person with the cameras off?"
+    },
+    "10": {
+      title: "Turn the Car Around",
+      objective: "Land authenticity, not perfection. Character is the turnaround.",
+      setup: "A start line and a far line marked with cones. Open floor. No supplies.",
+      instructions: "Everyone starts walking from the line toward the far cone, which stands for heading down a wrong road. Call out common wrong turns, like lied to cover something, went along with the crowd, ducked something you should have owned. As they walk, randomly call turn around, and on that call each youth stops, turns, and walks back. The point made is that the turn is allowed at any point, no matter how far down the road they got.",
+      debrief: "How far down the road did you get before the turn? In real life, what makes it hard to turn around? Who turns around faster, the person who thinks they have to be perfect or the person who knows they do not?"
+    },
+    "15": {
+      title: "Bigger on the Inside",
+      objective: "Connect character to who they actually want to be on the inside.",
+      setup: "Pairs or groups of three, scattered around the gym. No supplies.",
+      instructions: "Give the group the short list from the lesson: kindness, courage, reliability, trustworthiness, authenticity, forgiveness. Each youth picks the one they most want more of on the inside and tells their group one real situation this week where they could show it. The group backs the choice and, if they want, calls out a time they have already seen that quality in the person. A few share with the room. Mentors go first.",
+      debrief: "Which one did you pick and why that one? Where could you show it this week? Has anybody ever seen that in you before, even once?"
+    }
+  },
+  7: {
+    "5": {
+      title: "Set It Down",
+      objective: "Let future leaders physically feel what carrying weight does, and what setting it down feels like, without anyone having to say what their weight is.",
+      setup: "Open floor. Everyone standing. A ball in each hand is optional and does not change anything.",
+      instructions: "1. Everyone stands and holds both arms straight out in front, ball in hand or empty, does not matter.\n2. Tell them to picture one thing they have been carrying that is not theirs to carry anymore. Keep the arms up.\n3. Hold for about a minute. The arms start to burn. Let them feel it.\n4. Say set it down and have everyone drop their arms at once. Then talk about the difference.",
+      debrief: "What happened to your arms the longer you held that up?\nNothing changed about the weight itself, so why did setting it down feel that good?\nWhat is something you have been holding a lot longer than a minute?"
+    },
+    "10": {
+      title: "The Broken Piece",
+      objective: "Make the mosaic real. Show that a broken piece does not get thrown out. It becomes part of something.",
+      setup: "Circle. No supplies needed. A cone in the middle is optional just to anchor the space.",
+      instructions: "1. Get them in a circle. Tell them a mosaic is built entirely from broken pieces that would normally get swept up and thrown away.\n2. Explain that an artist takes those exact broken pieces and arranges them into something people travel to see.\n3. Go around the circle. Each future leader names one strength they carry that came out of something hard. The strength only, never the hard thing itself. Toughness, loyalty, reading people, whatever it is.\n4. After the last one, point out that the whole circle just built a mosaic out loud, piece by piece.",
+      debrief: "Where do you think that strength of yours actually came from?\nIf some of your best pieces came out of the hard stuff, does that change how you see it?\nA mosaic needs a lot of different pieces to work. What does that say about this group?"
+    },
+    "15": {
+      title: "Two Paths",
+      objective: "Put the three paths in front of them, make them pick one out loud, then own it.",
+      setup: "Use the length of the gym or field. Mark three zones with cones or floor spots: one wall is the Easy Path, the middle is the Better Path, the far wall is the Excellent Path.",
+      instructions: "1. Mark the three zones across the space. Easy Path at one wall, Better Path in the middle, Excellent Path at the far wall.\n2. Explain the three. Easy, you treat people however you feel like. Better, you treat people exactly how they treat you. Excellent, you treat people better than they treat you.\n3. Read a quick everyday scenario. Someone talks behind your back. Someone owes you and does not pay you back. A teammate keeps messing up.\n4. After each scenario, kids walk to the zone for the path they would honestly take, not the one that sounds good.\n5. Pull a couple of kids and ask why they are standing where they are. No wrong spot. Make them own it.",
+      debrief: "Which path is hardest to actually walk, and why?\nThe Excellent Path costs you something every time. What do you get back that makes it worth it?\nWhich path do most people around you live on, and is that the path you want?"
+    }
+  },
+  8: {
+    "5": {
+      title: "The Twenty",
+      objective: "Show that worth does not change based on how something gets treated. Fast, physical, and it lands before anyone can deflect.",
+      setup: "One twenty dollar bill. Any bill works, or even a folded piece of paper standing in for one. Circle, open floor.",
+      instructions: "1. Hold up the bill and ask who wants it. Hands go up.\n2. Crumple it in your fist, drop it, step on it, mess it up. Ask again who still wants it. The hands stay up.\n3. Make the point. You all still want it because messing it up did not change what it is worth. It is still a twenty.\n4. Land it. People are the same. What you have been through did not lower your value. You are still worth full price.",
+      debrief: "Why did you still want the bill after it got crumpled and stepped on?\nIf that is true for a twenty, why do we act like it is not true for people?\nWhat is something you have been through that you figured lowered your value but actually did not?"
+    },
+    "10": {
+      title: "Clearance Rack or Glass Case",
+      objective: "Get them to see the everyday choices that mark a person up or down, and own where they have been parking themselves.",
+      setup: "Mark two zones with cones or two walls. One side is the Clearance Rack. The other side is the Glass Case. Open floor in between.",
+      instructions: "1. Explain the two. The clearance rack is where stuff gets marked down and ignored. The glass case is where the valuables get kept and protected.\n2. Read out one behavior at a time. Examples: letting people talk to you any kind of way, keeping your word, talking yourself down so nobody calls you cocky, showing up when you said you would, copying everybody else just to fit in.\n3. After each one, kids move to the rack or the case depending on whether that behavior marks a person up or down.\n4. Once they have sorted a few, ask which rack their actual week has looked like. No judgment, just honesty.",
+      debrief: "Which of those behaviors marks a person down the fastest?\nWhat is one thing you already do that puts you in the glass case without you even trying?\nWhat is one clearance rack habit you would drop if you fully decided you were valuable?"
+    },
+    "15": {
+      title: "Worth the Hire",
+      objective: "Force them to make the case for their own value out loud, with evidence, like they are selling the most important thing they own, which is themselves.",
+      setup: "Pairs. Open floor or bleachers. No supplies needed.",
+      instructions: "1. Pair everyone up. Tell them they are now each other\'s agent, the person whose whole job is to talk up how valuable their partner is.\n2. Give them two minutes to interview their partner. Find real things. What are they good at, what have they pulled off, who counts on them, what do they bring to a room.\n3. Each agent introduces their partner to the group in about thirty seconds and sells their value out loud. Not roasting. Selling.\n4. The partner just stands there and takes it. No arguing it down, no joking it off. They have to let the value land.",
+      debrief: "Which was harder, hyping up your partner or standing there and letting yours hype you?\nWhy is it so easy to see value in someone else and so hard to claim it for yourself?\nIf everything your agent just said is true, what price tag should you actually be wearing?"
+    }
+  },
+  9: {
+    "5": {
+      title: "In Your Control, Not in Your Control",
+      objective: "Get them sorting fast what they can and cannot control, so responsibility lands as the stuff in their hands, not everything that ever happened to them.",
+      setup: "Two zones with cones or two walls. One side is In My Control. The other side is Not in My Control. Open floor between them.",
+      instructions: "1. Mark the two zones. One side In My Control, the other Not in My Control.\n2. Call out one thing at a time. Examples: the weather, how you treat people, what people say about you, whether you show up, the family you were born into, how you respond when somebody disrespects you, your effort.\n3. After each one, kids move to the side they think it belongs on.\n4. When something splits the room, like what people say about you, name the move. You cannot control what they say. You can control what you do about it.",
+      debrief: "Which one surprised you, something you thought you controlled but do not, or the other way around?\nResponsibility lives on only one of these sides. Which one?\nWhat is one thing on the Not in My Control side that you have been wasting energy on?"
+    },
+    "10": {
+      title: "The Mirror Says",
+      objective: "Make the only I can idea physical. Separate what others can do for you from what only you can do.",
+      setup: "Circle or pairs. No supplies needed.",
+      instructions: "1. Explain the setup. There are things people can do for you and things only you can do, and they are not the same.\n2. Go around and hand each future leader the front half of one of these to finish. You can coach me, but only I can. You can teach me, but only I can. You can believe in me, but only I can.\n3. Let the answers be real, not perfect. The point is they hear themselves say the only I can part out loud.\n4. Close the circle by pointing out that every single answer ended with I. That is the mirror. That is responsibility.",
+      debrief: "Which is harder for you, the part others do or the part only you can do?\nWhere in your life have you been waiting on somebody else to do the part that is actually yours?\nWhat is one only I can move you have been avoiding?"
+    },
+    "15": {
+      title: "Step Up to the Mirror",
+      objective: "Walk the full arc. Own a real area, name the next move, and commit to it in front of the group.",
+      setup: "Open floor. Mark one spot as the mirror with a cone or a taped line. No supplies needed.",
+      instructions: "1. Set one spot as the mirror. Tell them stepping up to it means owning one area of their life out loud, not the fault, the move.\n2. Give them a minute to pick one area they want to take control of. School, attitude, a relationship, a habit, whatever is real for them.\n3. One at a time, a future leader steps up to the mirror spot and says the area and the one move they will make. Keep it short. I am taking control of, and my move is.\n4. After each one, the group gives a single clap or a nod. No roasting, no advice, just witnessed. Being seen making the commitment is the point.",
+      debrief: "How did it feel to say your move out loud with people watching instead of just thinking it?\nWhy is it easier to name the problem than to name the move?\nWho in this room are you going to let check on whether you actually made your move?"
+    }
+  },
+  10: {
+    "5": {
+      title: "Easy Brave or Hard Brave",
+      objective: "Reset the definition fast. Get them sorting the loud kind of courage from the hard quiet kind before anything else happens.",
+      setup: "Two zones with cones or two walls. One side Easy Brave, the other side Hard Brave. Open floor between them.",
+      instructions: "1. Mark the two zones. One side Easy Brave, the other Hard Brave.\n2. Call out a move one at a time. Examples: swinging on somebody who disrespected you, walking away from that same fight, talking trash back, telling a coach the truth about something you did, taking a dare, standing up for a kid getting picked on, going along with the crowd.\n3. After each one, kids move to the side they think it lands on, easy brave or hard brave.\n4. Point out the pattern as it builds. The stuff that looks toughest is usually the easy kind. The stuff that looks soft is usually the hard kind.",
+      debrief: "Which kind of brave gets more respect in your world, and which one actually takes more?\nWhy is walking away harder than swinging?\nWhich kind do you want to be known for?"
+    },
+    "10": {
+      title: "Move Scared",
+      objective: "Make the action-before-feeling idea physical. Show that you do the thing first and the nerve catches up after.",
+      setup: "Line everyone up behind a start line, marked with cones or just a spot on the floor. No supplies needed.",
+      instructions: "1. Line everyone up behind the start line. Tell them you will call out small brave moves and they step across only if they have ever done it.\n2. Start light and build. Step across if you have ever raised your hand when you were not sure. If you have ever apologized first. If you have ever stood up for somebody. If you have ever told the truth knowing it would cost you.\n3. Each step, point out that nobody who crossed felt one hundred percent ready first. They moved anyway.\n4. Land it. That hesitation they felt before stepping is exactly what fear feels like, and stepping anyway is exactly what courage is. They just did reps of it.",
+      debrief: "Did you feel ready before you stepped, or did you just step?\nWhat is one move you did not step across for, that you wish you had?\nIf brave is just moving before you feel ready, what is one move you could make this week?"
+    },
+    "15": {
+      title: "The Cornerstone",
+      objective: "Land the anchor. Each future leader names the one hard thing they will build their courage on, and the group watches the wall go up.",
+      setup: "Circle. If you have cones, blocks, or balled-up paper, you will stack one per person to build a visible pile. No supplies works too, just go around.",
+      instructions: "1. Explain the cornerstone. It is the first stone a builder sets, the one everything else stands on. Courage is that stone for your life.\n2. Go around the circle. Each future leader names one scared-but-right move they are committing to this week. The truth they will tell, the fight they will walk away from, the person they will pull up.\n3. As each one says theirs, they add a stone to the pile in the middle, a cone, a block, whatever you have. If no supplies, they step into the circle and say it.\n4. When the last one goes, point at the pile. Every one of those is a hard thing somebody chose to do scared. That is what a wall of courage looks like, built one stone at a time.",
+      debrief: "Which was harder, picking your move or saying it out loud in front of everybody?\nWhose stone are you going to remember, and why?\nCourage is contagious. Whose courage this week could you be the one to spark?"
+    }
+  },
+  11: {
+    "5": {
+      title: "Wait or Make",
+      objective: "Drive the core split fast. Get them feeling the difference between waiting for something to happen and making it happen.",
+      setup: "Two zones with cones or two walls. One side Wait, the other side Make. Open floor between them.",
+      instructions: "1. Mark the two zones. One side Wait, the other Make.\n2. Read a situation one at a time. Examples: you want to be on the team but tryouts are coming, you and a friend got into it and neither of you has texted, your grade is slipping in one class, somebody new is sitting alone at lunch, you want a job but have not applied anywhere.\n3. After each one, kids move to Wait or Make depending on what they would honestly do, not what sounds good.\n4. Point out the pattern. The Make side is where things actually change. The Wait side is where you hope somebody else throws the stone for you.",
+      debrief: "Which side do you spend most of your life standing on?\nWhat is one thing you have been on the Wait side about for too long?\nWhat would it take to step over to Make on that one?"
+    },
+    "10": {
+      title: "First Ripple",
+      objective: "Make the throw and the ripple physical, and show that one small move sets off more than you can see.",
+      setup: "Circle. No supplies, or one ball or balled-up paper to pass as the stone.",
+      instructions: "1. Get them in a circle. Tell them the circle is a still pond and the stone is about to get thrown.\n2. Start with one future leader doing one small positive action toward the person on their right. A real compliment, a fist bump, calling out one thing that person is good at.\n3. That person then does the same toward the next, and it travels all the way around. The ripple moves one person at a time.\n4. When it gets back to the start, point out that one small first move just touched every single person in the circle. That is a ripple. Nobody planned the whole thing. One person just threw.",
+      debrief: "How far did one small move travel?\nThe first person could not see the whole ripple coming. Does that change how you think about small moves?\nWhat is one small throw you could make tomorrow that might travel further than you think?"
+    },
+    "15": {
+      title: "Name the Throw",
+      objective: "Move from idea to commitment. Each future leader picks one real thing they have been waiting on and commits to the first move.",
+      setup: "Circle or pairs. No supplies needed.",
+      instructions: "1. Give them a quiet minute to think of one thing in their life that is sitting still because they have been waiting instead of throwing.\n2. Have them shrink it down to the smallest first move. Not the whole fix. The first stone. One text, one application, one conversation, one rep.\n3. Go around. Each future leader names the still pond and the one small throw they will make this week. Keep it short. I have been waiting on, and my first throw is.\n4. After each one, the group gives a nod or a single clap. Witnessed, not judged. Then point out that the room just watched a bunch of people stop waiting at the same time.",
+      debrief: "Was it harder to pick the pond or to shrink it down to one small throw?\nWhy do we wait on stuff we already know how to start?\nWho in this room is going to ask you next week whether you actually threw it?"
+    }
+  },
+  12: {
+    "5": {
+      title: "Name Your Rock",
+      objective: "Get every future leader to name one thing that actually matters to them, fast, no overthinking.",
+      setup: "Circle up. No supplies.",
+      instructions: "1. Bring the whole group into one circle.\n2. Go around. Each future leader says their name and one rock, the thing in their life that matters most.\n3. Keep it to one word or one sentence. No explaining, no judging.\n4. If someone freezes, skip them and come back at the end. Do not let it stall.",
+      debrief: "Did anybody\'s rock surprise you?\nHow many of us actually spend our time on the thing we just named?"
+    },
+    "10": {
+      title: "The Jar",
+      objective: "Make the lesson land in their hands instead of just their ears.",
+      setup: "One container (jar, bucket, or cup). A few big rocks or balls, some gravel or smaller balls, and sand or torn paper scraps. Basic gear is fine.",
+      instructions: "1. Hand a future leader the container and have them pour the sand in first, then the gravel.\n2. Now have them try to fit the big rocks on top. They will not go in.\n3. Dump it out. Have them start over: rocks first, then gravel, then sand.\n4. It all fits this time. Let the group call out what just happened before you say a word.",
+      debrief: "What changed? Same stuff, same jar.\nWhat is the sand in your life that you pour in first without even thinking about it?\nWhat would it look like to put your rocks in first this week?"
+    },
+    "15": {
+      title: "Two Out of Ten",
+      objective: "Help future leaders find the small number of things that carry most of the weight, lived instead of lectured.",
+      setup: "Open floor or court. Cones or markers optional. No supplies needed.",
+      instructions: "1. Each future leader lists ten things they spend time on in a normal week, out loud or in their head.\n2. Cut it down to the two that matter most, the two that would change the most if done right.\n3. Pair up. Each one tells their partner their two and why.\n4. A few share with the whole group.\n5. Push the real question: are you spending your time on those two, or on the other eight?",
+      debrief: "Was it hard to pick just two? Why?\nWhat is one of the eight you could let go of, or say \"not right now\" to?\nIf you put your two first this week, who else does that help, not just you?"
+    }
+  },
+  13: {
+    "5": {
+      title: "One Thing I Am Working On",
+      objective: "Get every future leader to admit, out loud, one thing they want to get better at. That admission is teachability in real time.",
+      setup: "Circle up. No supplies.",
+      instructions: "1. Bring the whole group into one circle.\n2. Each future leader says their name and one thing they are trying to get better at. Anything counts. Free throws, keeping their cool, school, a job.\n3. One sentence. Nobody gives advice, they just say it and pass.\n4. If someone freezes, skip them and come back at the end.",
+      debrief: "Was it harder than it sounds to admit out loud that you are working on something?\nYou know somebody who acts like they have nothing to work on. How is that going for them?"
+    },
+    "10": {
+      title: "Coach Me Through It",
+      objective: "Let them feel the difference between fighting direction and trusting a coach. That trust is what teachable feels like.",
+      setup: "Pairs. Open floor with a few cones, water bottles, or markers scattered as obstacles. Basic gear is fine.",
+      instructions: "1. Scatter a simple path of obstacles across the floor.\n2. One future leader closes their eyes. Their partner is the coach, voice only, no touching.\n3. The coach talks them through the path step by step. The walker has to trust the voice and adjust when corrected.\n4. Switch roles so everyone coaches and everyone gets coached.",
+      debrief: "Was it easier to trust your coach, or did part of you want to just do it your own way?\nWhen the coach corrected you, did you get tight or did you adjust? Same thing happens in real life.\nWho is a coach voice in your real life that you actually trust?"
+    },
+    "15": {
+      title: "The Same Hole",
+      objective: "Help future leaders name a mistake they keep repeating and picture what changing the pattern actually looks like.",
+      setup: "Circle or small groups. One cone or object in the middle to stand for \"the hole.\" No other supplies needed.",
+      instructions: "1. Put the cone in the middle. Tell them it stands for a hole people keep falling into, the same mistake over and over.\n2. Walk the stages out loud: first time you fall in, you blame everybody else. Next time you see it coming and still fall in. Then you start stepping around it. Eventually you just walk a different street.\n3. Each future leader names one hole they keep falling in, only what they are willing to share. Skipping school, blowing up when angry, the wrong crowd, whatever it is.\n4. Then they say what \"walking around it\" would actually look like this week.\n5. Share in pairs or small groups first, then a few share with the whole room.",
+      debrief: "What stage are you at with your hole, blaming everyone, seeing it but still falling, or stepping around it?\nWhat is one thing that would move you one stage forward?\nWho could help you walk around it, if you actually let them?"
+    }
+  },
+  14: {
+    "5": {
+      title: "Uphill or Downhill",
+      objective: "Get future leaders to see, fast, that their daily habits are either walking them uphill or downhill.",
+      setup: "Open floor. Mark one side of the room uphill and the other downhill. No supplies, or two cones.",
+      instructions: "1. Mark an uphill side and a downhill side of the room.\n2. Call out a habit, like scrolling your phone until 2am, showing up on time, skipping class, or hitting the gym.\n3. Future leaders walk to the side they think it belongs on, uphill or downhill.\n4. Move fast. Call out eight or ten habits and keep them moving.",
+      debrief: "Which side did you end up on more, uphill or downhill?\nWhat is one downhill habit you would want to flip?"
+    },
+    "10": {
+      title: "Hold the Climb",
+      objective: "Let them feel uphill effort in their legs, and feel how easy it is to quit.",
+      setup: "A clear wall. No other supplies.",
+      instructions: "1. Everyone gets into a wall sit, back flat on the wall, knees bent like sitting in an invisible chair. That burn is the climb.\n2. Hold it while you talk. Point out that this is what uphill feels like. It burns, and your body is begging you to stop.\n3. Tell them they can drop anytime. Quitting is instant and it feels great for a second. That is the downhill slide.\n4. Go again. This time challenge them to hold ten seconds past when they wanted to quit. That ten seconds is self-discipline.\nSafety note: keep it to wall sits, no horseplay against the wall. Anyone with a knee issue can sit this one out and be the timer.",
+      debrief: "How did your body feel right before you wanted to quit?\nWhat does ten seconds past quitting look like in your real life?"
+    },
+    "15": {
+      title: "One Promise",
+      objective: "Move from idea to a concrete, small, kept promise, and connect thinking to habit.",
+      setup: "Circle or small groups. No supplies. Paper optional.",
+      instructions: "1. Walk the chain out loud: how you think sets your habits, and your habits become who you are. Think life is easy and you slide. Think it is hard and you climb.\n2. Each future leader picks one small uphill move for this week. Small on purpose. Make your bed every morning. Show up on time. Ten pushups before bed. Something they can actually do.\n3. The rule: it has to be small enough that they have no excuse. If it sounds impressive, it is too big. Shrink it.\n4. They tell a partner their one promise and why that one. Then they become each other\'s check-in for the week.\n5. A few share with the whole room.",
+      debrief: "Why did you pick that one?\nWhat is the thought that has been keeping you from doing it?\nWho is going to know if you actually do it this week?"
+    }
+  },
+  15: {
+    "5": {
+      title: "Bounce Back",
+      objective: "Get future leaders to name, fast, one thing they have already come back from. Proof they are already resilient.",
+      setup: "Circle up. No supplies.",
+      instructions: "1. Bring the whole group into one circle.\n2. Each future leader says their name and one thing they have already bounced back from. Could be small, could be big, only what they want to share.\n3. One sentence. No need to tell the whole story.\n4. Anybody can pass. Come back to them at the end.",
+      debrief: "Notice how everybody in this circle has already come back from something? That is resilience. You already have it.\nWhat helped you get back up that time?"
+    },
+    "10": {
+      title: "Stop Sign or Lesson",
+      objective: "Let them practice flipping a failure from an enemy into a teacher, out loud.",
+      setup: "Open floor or circle. No supplies.",
+      instructions: "1. Call out a common fail, like bombing a test, getting cut from a team, messing up at a job, or blowing up on somebody.\n2. First ask the group what it looks like to make that a stop sign. Quit, get bitter, give up. Take a couple answers.\n3. Then flip it. What does it look like to make that same fail a lesson? What would you do different, what did it teach you. Take a couple answers.\n4. Run three or four different fails, going enemy first then friend each time.",
+      debrief: "Same exact fail, two totally different roads. Which road do you usually take?\nWhat is one fail in your life right now you could flip from a stop sign to a lesson?"
+    },
+    "15": {
+      title: "The Comeback Plan",
+      objective: "Move from idea to one concrete, hard, real action that earns self-respect, and tie it to feeling, then choosing.",
+      setup: "Circle or small groups. No supplies. Paper optional.",
+      instructions: "1. Talk it through: real self-respect does not come from people hyping you up. It comes from doing something hard and watching yourself do it.\n2. Each future leader picks one hard thing they could actually do this week. Hard enough that doing it earns a little self-respect, real enough that it is possible. Apologize to someone. Show up somewhere they have been avoiding. Finish something they started.\n3. Then they name the feeling that usually stops them, fear, anger, embarrassment, not caring, and say out loud: I am going to feel that and do it anyway.\n4. Share with a partner, then pair up as check-ins for the week.\n5. A few share with the whole room.",
+      debrief: "Why that one? What makes it hard?\nWhat is the feeling that usually stops you, and what would it look like to feel it and move anyway?\nWho is going to know if you actually did it?"
+    }
+  },
+  16: {
+    "5": {
+      title: "Thirty Seconds",
+      objective: "Let future leaders practice the easiest form of influence, saying one real positive thing, right now in the room.",
+      setup: "Pairs. No supplies.",
+      instructions: "1. Everyone grabs a partner, ideally someone they do not know as well.\n2. Each person has thirty seconds to tell their partner one real, positive thing. Something they have noticed, something they respect. No fake stuff.\n3. Switch. The other partner goes.\n4. Quick round, keep it moving, then bring it back together.",
+      debrief: "How did it feel to get told something real? How did it feel to give it?\nThat took thirty seconds and cost nothing. Who in your life needs to hear something real from you?"
+    },
+    "10": {
+      title: "Who Is Watching You",
+      objective: "Move each kid from \"I am the one being helped\" to \"I am someone others watch and learn from.\"",
+      setup: "Circle or small groups. No supplies.",
+      instructions: "1. Ask them to think of one person younger than them, or who looks up to them. A sibling, a cousin, a kid in the neighborhood.\n2. Each future leader names that person out loud and one thing that person might copy from watching them, good or bad.\n3. Then the real question: what is one thing you would want them to catch you doing?\n4. Let a few share. Do not force everyone.",
+      debrief: "Did it change anything to realize someone is actually watching you?\nWhat is one thing you want to be the example of for that person?"
+    },
+    "15": {
+      title: "The Sendoff Circle (Program Closing Ritual)",
+      objective: "Close the full sixteen weeks by making sure every future leader is seen and named, and leaves carrying their own lit candle forward.",
+      setup: "One big circle, the whole group together, coaches included. Optional: battery LED tea lights or phone flashlights, one per person. Do not use real open flames indoors with the group.",
+      instructions: "1. Everyone stands in one circle. This is the last time this whole room is together, so treat it that way.\n2. Going around the circle, each future leader gets named for one real thing, by a coach or by the person next to them. One genuine sentence. Every single kid gets named. Nobody gets skipped.\n3. As each kid is named, they turn on their light, or just put a hand on the shoulder of the next person, and pass it on. The light moving around the circle is the influence moving on.\n4. When it has gone all the way around and everyone is holding a light, close with the message: you came in here being worked on, you are leaving with a lit candle. Somebody out there is waiting for you to light theirs.\n5. Let them have a minute. Then send them off.",
+      debrief: "What is one thing you are taking with you from these sixteen weeks?\nWho is the first candle you are going to light out there?"
+    }
+  }
+};
+
+const AFFIRMATIONS = {
+  1: "The gift was never where you started. The gift is that you get to choose what comes next. Tonight, you choose.",
+  2: "Nothing about tomorrow is promised. The one thing you control is whether you grow today. So plant something, then keep showing up while it is still underground.",
+  3: "You do not get to pick what gets thrown at you. You pick what you do with it. That is the one thing that is always yours, and it colors everything else. So today, you decide how this goes.",
+  4: "Anybody can start. Starting is easy. What counts is who is still in the race when it gets hard. You are going to fall. Everybody does. Just keep getting back in, because the win goes to the one who finishes.",
+  5: "Walls keep you safe, but they also keep you alone. A bridge lets the right people in while you still hold the gate. You do not have to trust everybody. Just stop locking out the ones who would actually show up for you.",
+  6: "What you are on the inside is the only thing that makes you rise. Nobody can see it, nobody can take it, and it is built one choice at a time. Whatever is behind you, you get to build it starting tonight.",
+  7: "Everything you want for your life is sitting on the other side of letting this go. All the possibilities are over there. Forgiveness is the door.",
+  8: "The number you put on yourself tonight is the number the world is going to pay you. So write it high, and back it up. You are not on the clearance rack. You never were.",
+  9: "Nobody is coming to run your life for you. That is the bad news and the best news, because it means nobody gets a vote unless you hand it to them. Step up to your own mirror. The only person who can take it from here is the one looking back.",
+  10: "Nobody in here is waiting to stop being scared. That day is not coming. Brave people are not the ones without fear, they are the ones who move with it. So move. Scared and all. Set the stone, take the step, and let the brave catch up to you.",
+  11: "You cannot win a thing you never start. The water will sit there flat forever, waiting on somebody, and that somebody is you. Pick up the stone. Make the throw. You do not have to see where the ripples go. You just have to begin.",
+  12: "I decide what my priorities are. I put my rocks in the jar first. If I don\'t choose them, someone else will choose for me.",
+  13: "My desire to improve starts with staying teachable. I stay moldable. I stay hungry. I am not done growing.",
+  14: "My success is set by my self-discipline. I keep my promises to myself. Everything worthwhile is uphill, and I climb.",
+  15: "I do not pick the pressure. I pick my comeback. I feel it, I choose my move, and I get back up. I shine through the grind.",
+  16: "My life matters when I light the way for someone else. I keep my candle lit, and I help others find their light. I am the example now."
+};
+
+CFG.lessons.forEach(l => { l.fileIds = FILE_IDS[l.number]; l.icebreakers = ICEBREAKERS[l.number]; l.affirmation = AFFIRMATIONS[l.number]; });
 function driveUrl(id){ return 'https://drive.google.com/file/d/'+id+'/view'; }
 function docLink(id, label){ return id
   ? '<a class="docrow" href="'+driveUrl(id)+'" target="_blank"><span>'+label+'</span><span class="dl">PDF &rarr;</span></a>'
   : '<div class="docrow"><span>'+label+'</span><span class="dl missing">Not uploaded</span></div>'; }
 
-let _cur = CFG.currentLesson;
+// Auto-calculate current lesson: Week 1 starts Wed June 3, 2026, cycles 1–16
+function currentWeek(){
+  const start = new Date('2026-06-03T00:00:00-04:00'); // Week 1 Wednesday, Eastern
+  const now = new Date();
+  const msPerWeek = 7 * 24 * 60 * 60 * 1000;
+  const weeksElapsed = Math.floor((now - start) / msPerWeek);
+  return (((weeksElapsed % 16) + 16) % 16) + 1; // always 1–16, handles before start too
+}
+let _cur = currentWeek();
 function L(){ return CFG.lessons.find(x=>x.number===_cur) || CFG.lessons[0]; }
 function stepLesson(d){ let n=_cur+d; if(n<1)n=16; if(n>16)n=1; _cur=n; render(); }
 const norm = s => (s||"").toLowerCase().replace(/[\s\-_]/g,"");
@@ -295,8 +705,33 @@ function coachView(){
      ${docLink(l.fileIds.coachesInfographic, 'Coaches Infographic')}
    </div>
    <div class="card"><div class="sect-label">Icebreaker</div>
-     ${ l.icebreaker ? `<div class="action-box">${l.icebreaker}</div>` : '<div class="missing">Add this week\'s icebreaker in the content file.</div>'}
-   </div>`;
+     ${l.icebreakers ? `
+       <div class="time-btns">
+         <button class="time-btn" onclick="showIcebreaker('5')">5 Min</button>
+         <button class="time-btn" onclick="showIcebreaker('10')">10 Min</button>
+         <button class="time-btn" onclick="showIcebreaker('15')">15 Min</button>
+       </div>
+       <div id="ib-content"></div>
+     ` : '<div class="missing">No icebreakers loaded for this week.</div>'}
+   </div>
+   ${l.affirmation ? `<div class="card"><div class="sect-label">Weekly Affirmation</div>
+     <div class="affirm-text">${l.affirmation}</div></div>` : ''}`;
+}
+
+function showIcebreaker(mins){
+  const ib = L().icebreakers[mins];
+  if(!ib) return;
+  document.querySelectorAll('.time-btn').forEach(b => b.classList.remove('active'));
+  event.target.classList.add('active');
+  const nl2br = s => (s||'').replace(/\n/g,'<br>');
+  document.getElementById('ib-content').innerHTML = `
+    <div class="ib-detail">
+      <h3>${ib.title}</h3>
+      <div class="ib-field"><strong>Objective</strong>${nl2br(ib.objective)}</div>
+      <div class="ib-field"><strong>Setup</strong>${nl2br(ib.setup)}</div>
+      <div class="ib-field"><strong>Instructions</strong>${nl2br(ib.instructions)}</div>
+      <div class="ib-field"><strong>Debrief</strong>${nl2br(ib.debrief)}</div>
+    </div>`;
 }
 
 function go(v){ state.view=v; if(v==='home')state.coach=false; render(); }
