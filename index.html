@@ -564,6 +564,7 @@ function L(){ return CFG.lessons.find(x=>x.number===_cur) || CFG.lessons[0]; }
 function stepLesson(d){ let n=_cur+d; if(n<1)n=16; if(n>16)n=1; _cur=n; render(); }
 const norm = s => (s||"").toLowerCase().replace(/[\s\-_]/g,"");
 const app = document.getElementById('app');
+const SHEET_URL = 'https://script.google.com/macros/s/AKfycbwNtae2bM5Lheebk_fm0HKxFUCE83Quqy8J_FH0nVf955ArbUIhjfr779QU6VcNAwO5sA/exec';
 let state = {view:'home', coach:false, demoWindow:false, adminPw:'', adminSettings:null, windowOverride:null};
 
 function embed(id){ return id
@@ -679,7 +680,6 @@ function eventsCard(){
 
 function wireAttendance(){}
 function toggleDemo(){ state.demoWindow=!state.demoWindow; render(); }
-const SHEET_URL = 'https://script.google.com/macros/s/AKfycbwNtae2bM5Lheebk_fm0HKxFUCE83Quqy8J_FH0nVf955ArbUIhjfr779QU6VcNAwO5sA/exec';
 
 function checkIn(){
   const n=document.getElementById('kidname').value.trim();
