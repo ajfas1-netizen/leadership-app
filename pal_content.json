@@ -1,0 +1,486 @@
+{
+  "program": {
+    "name": "PAL Leadership Weekly",
+    "currentLesson": 1,
+    "comment_currentLesson": "Bump this number each week, 1 through 16, then back to 1. The app opens to whatever lesson this points at.",
+    "driveRootFolderId": "1InESuRRPI9h02QqX6u_NABCDGCqMOvnX",
+    "links": {
+      "website": "https://martincountypal.org",
+      "youtubeChannel": "https://www.youtube.com/@MartinCountyPALLeadershp"
+    },
+    "doors": {
+      "open": "Parents and kids. Shows: main Brief video, parent podcast, regular infographic (centerpiece), takeaway, action, attendance check-in, upcoming events, website + subscribe links.",
+      "coach": "Gated by one universal mentor login. Shows: Coaches Corner (mentor prep) video, Coaches Brief video, workbook PDF, coaches card PDF, coaches infographic, regular infographic, icebreaker."
+    },
+    "attendance": {
+      "model": "yes-count",
+      "target": 16,
+      "checkInWordSource": "Each week's word is the lesson name. Match must ignore capitalization, spaces, and dashes.",
+      "storage": "Writes one yes per check-in to a restricted Google Sheet via Apps Script. Sheet tallies each kid toward 16.",
+      "window": {
+        "timezone": "America/New_York",
+        "day": "Wednesday",
+        "open": "17:30",
+        "close": "19:30",
+        "coachOverride": true,
+        "note": "Window must be checked against a trusted time source, not the device clock, or it can be bypassed by changing the phone time. Coach override can manually open/close."
+      }
+    },
+    "events": {
+      "source": "manual",
+      "comment": "v1: edit this list by hand. Each event: title, date, time, location, note.",
+      "items": []
+    },
+    "driveStatus": "Folders verified and IDs recorded. PDFs not yet uploaded. Once uploaded, file IDs will be harvested into fileIds."
+  },
+  "lessons": [
+    {
+      "number": 1,
+      "name": "Choices",
+      "folder": "Lesson_01_Choices",
+      "files": {
+        "workbook": "Lesson_01_Choices_Workbook.pdf",
+        "coachesCard": "Lesson_01_Choices_Coaches_Card.pdf",
+        "infographic": "Lesson_01_Choices_Infographic.pdf",
+        "coachesInfographic": "Lesson_01_Choices_Coaches_Infographic.pdf"
+      },
+      "videos": {
+        "brief": "https://youtu.be/rQEdgsx6SZ4",
+        "parent": "https://youtu.be/KhavCfOc2P4",
+        "coachesCorner": "https://youtu.be/Ah1ri5_9hTc",
+        "coachesBrief": ""
+      },
+      "checkInWord": "Choices",
+      "takeaway": "Your next choice is greater than your last mistake.",
+      "action": "Before one decision this week, pause and ask if it moves you toward who you want to be.",
+      "icebreaker": "",
+      "folderId": "1cHvPF3cXA2i4p_8RP-oWjZROJVkWe4bk",
+      "fileIds": {
+        "workbook": "",
+        "coachesCard": "",
+        "infographic": "",
+        "coachesInfographic": ""
+      }
+    },
+    {
+      "number": 2,
+      "name": "Growth",
+      "folder": "Lesson_02_Growth",
+      "files": {
+        "workbook": "Lesson_02_Growth_Workbook.pdf",
+        "coachesCard": "Lesson_02_Growth_Coaches_Card.pdf",
+        "infographic": "Lesson_02_Growth_Infographic.pdf",
+        "coachesInfographic": "Lesson_02_Growth_Coaches_Infographic.pdf"
+      },
+      "videos": {
+        "brief": "https://youtu.be/9ddyr6M6xJ0",
+        "parent": "https://youtu.be/0ay3AxTr524",
+        "coachesCorner": "https://youtu.be/lT8w5x_H8ow",
+        "coachesBrief": "https://youtu.be/vv6WmbzM3s8"
+      },
+      "checkInWord": "Growth",
+      "takeaway": "Growth is a choice you make daily, not something that happens to you.",
+      "action": "Pick one small thing to get better at this week and practice it once a day.",
+      "icebreaker": "",
+      "folderId": "1HXs0F-EIIAu7mYbfDWpA0OUnmbc1JjYM",
+      "fileIds": {
+        "workbook": "",
+        "coachesCard": "",
+        "infographic": "",
+        "coachesInfographic": ""
+      }
+    },
+    {
+      "number": 3,
+      "name": "Attitude",
+      "folder": "Lesson_03_Attitude",
+      "files": {
+        "workbook": "Lesson_03_Attitude_Workbook.pdf",
+        "coachesCard": "Lesson_03_Attitude_Coaches_Card.pdf",
+        "infographic": "Lesson_03_Attitude_Infographic.pdf",
+        "coachesInfographic": "Lesson_03_Attitude_Coaches_Infographic.pdf"
+      },
+      "videos": {
+        "brief": "https://youtu.be/eZzZVp8Epm0",
+        "parent": "https://youtu.be/q5cRHji70DY",
+        "coachesCorner": "https://youtu.be/Caox-MMh-lI",
+        "coachesBrief": "https://youtu.be/L7VnTKMtOJU"
+      },
+      "checkInWord": "Attitude",
+      "takeaway": "Your attitude is the one thing you control, even when the situation is not.",
+      "action": "When something goes wrong this week, catch your first reaction and choose a better one.",
+      "icebreaker": "",
+      "folderId": "19Dsy2_F_jYJfzh4Oxw0AZo7P5aLhTb5b",
+      "fileIds": {
+        "workbook": "",
+        "coachesCard": "",
+        "infographic": "",
+        "coachesInfographic": ""
+      }
+    },
+    {
+      "number": 4,
+      "name": "Commitment",
+      "folder": "Lesson_04_Commitment",
+      "files": {
+        "workbook": "Lesson_04_Commitment_Workbook.pdf",
+        "coachesCard": "Lesson_04_Commitment_Coaches_Card.pdf",
+        "infographic": "Lesson_04_Commitment_Infographic.pdf",
+        "coachesInfographic": "Lesson_04_Commitment_Coaches_Infographic.pdf"
+      },
+      "videos": {
+        "brief": "https://youtu.be/rh10DQTlSyw",
+        "parent": "https://youtu.be/ZxVVeX2H30o",
+        "coachesCorner": "https://youtu.be/WZRz1Z33HA0",
+        "coachesBrief": "https://youtu.be/5KxdHwaVns0"
+      },
+      "checkInWord": "Commitment",
+      "takeaway": "Commitment is what you keep doing after the excitement wears off.",
+      "action": "Finish one thing this week you would normally quit halfway through.",
+      "icebreaker": "",
+      "folderId": "1ZNVgJKs9bYI9MSEJ88LicgR-m6ctbcQx",
+      "fileIds": {
+        "workbook": "",
+        "coachesCard": "",
+        "infographic": "",
+        "coachesInfographic": ""
+      }
+    },
+    {
+      "number": 5,
+      "name": "Relationships",
+      "folder": "Lesson_05_Relationships",
+      "files": {
+        "workbook": "Lesson_05_Relationships_Workbook.pdf",
+        "coachesCard": "Lesson_05_Relationships_Coaches_Card.pdf",
+        "infographic": "Lesson_05_Relationships_Infographic.pdf",
+        "coachesInfographic": "Lesson_05_Relationships_Coaches_Infographic.pdf"
+      },
+      "videos": {
+        "brief": "https://youtu.be/VqR3ElljWAY",
+        "parent": "https://youtu.be/aL20EHj-BS8",
+        "coachesCorner": "https://youtu.be/KTtY4ATYRbQ",
+        "coachesBrief": "https://youtu.be/-dcHjYnf8hg"
+      },
+      "checkInWord": "Relationships",
+      "takeaway": "The way you treat people is the clearest picture of who you are.",
+      "action": "Reach out to one person this week and ask how they are actually doing.",
+      "icebreaker": "",
+      "folderId": "1UaHtIfRpR3vC-oMjbXXcmBrRvs9GCupC",
+      "fileIds": {
+        "workbook": "",
+        "coachesCard": "",
+        "infographic": "",
+        "coachesInfographic": ""
+      }
+    },
+    {
+      "number": 6,
+      "name": "Character",
+      "folder": "Lesson_06_Character",
+      "files": {
+        "workbook": "Lesson_06_Character_Workbook.pdf",
+        "coachesCard": "Lesson_06_Character_Coaches_Card.pdf",
+        "infographic": "Lesson_06_Character_Infographic.pdf",
+        "coachesInfographic": "Lesson_06_Character_Coaches_Infographic.pdf"
+      },
+      "videos": {
+        "brief": "https://youtu.be/tr6G00VdwvM",
+        "parent": "",
+        "coachesCorner": "https://youtu.be/juG2C3atu8U",
+        "coachesBrief": "https://youtu.be/N84r6mIydds"
+      },
+      "checkInWord": "Character",
+      "takeaway": "Character is who you are when no one is watching.",
+      "action": "Do one right thing this week that nobody will know about.",
+      "icebreaker": "",
+      "folderId": "1asX2G8Ek3y8i4HwDDyguC7N8qpcb9n0R",
+      "fileIds": {
+        "workbook": "",
+        "coachesCard": "",
+        "infographic": "",
+        "coachesInfographic": ""
+      }
+    },
+    {
+      "number": 7,
+      "name": "Forgiveness",
+      "folder": "Lesson_07_Forgiveness",
+      "files": {
+        "workbook": "Lesson_07_Forgiveness_Workbook.pdf",
+        "coachesCard": "Lesson_07_Forgiveness_Coaches_Card.pdf",
+        "infographic": "Lesson_07_Forgiveness_Infographic.pdf",
+        "coachesInfographic": "Lesson_07_Forgiveness_Coaches_Infographic.pdf"
+      },
+      "videos": {
+        "brief": "https://youtu.be/Z6GYQygkg2o",
+        "parent": "https://youtu.be/9XLXxnlm8kk",
+        "coachesCorner": "https://youtu.be/tPKR5_VP6-k",
+        "coachesBrief": "https://youtu.be/dJ1ufIShrAU"
+      },
+      "checkInWord": "Forgiveness",
+      "takeaway": "Holding a grudge costs you more than it costs the person you are mad at.",
+      "action": "Let go of one thing you have been holding against someone, even if only in your own head.",
+      "icebreaker": "",
+      "folderId": "1pGlyyOxTTkqiI1Eet0UcYL2ODAhv6yEy",
+      "fileIds": {
+        "workbook": "",
+        "coachesCard": "",
+        "infographic": "",
+        "coachesInfographic": ""
+      }
+    },
+    {
+      "number": 8,
+      "name": "Self-Worth",
+      "folder": "Lesson_08_Self_Worth",
+      "files": {
+        "workbook": "Lesson_08_Self_Worth_Workbook.pdf",
+        "coachesCard": "Lesson_08_Self_Worth_Coaches_Card.pdf",
+        "infographic": "Lesson_08_Self_Worth_Infographic.pdf",
+        "coachesInfographic": "Lesson_08_Self_Worth_Coaches_Infographic.pdf"
+      },
+      "videos": {
+        "brief": "https://youtu.be/t80xDNeHC0U",
+        "parent": "https://youtu.be/lBz0iUmv9OU",
+        "coachesCorner": "https://youtu.be/w5k4OCANVGM",
+        "coachesBrief": "https://youtu.be/uBIiX0Pdbok"
+      },
+      "checkInWord": "Self-Worth",
+      "takeaway": "Your value is not based on what other people say about you.",
+      "action": "Write down one thing you respect about yourself and read it when you feel low.",
+      "icebreaker": "",
+      "folderId": "1evL6k-epkCi4rIA7kjzyqoJ3-Y5YQzA6",
+      "fileIds": {
+        "workbook": "",
+        "coachesCard": "",
+        "infographic": "",
+        "coachesInfographic": ""
+      }
+    },
+    {
+      "number": 9,
+      "name": "Responsibility",
+      "folder": "Lesson_09_Responsibility",
+      "files": {
+        "workbook": "Lesson_09_Responsibility_Workbook.pdf",
+        "coachesCard": "Lesson_09_Responsibility_Coaches_Card.pdf",
+        "infographic": "Lesson_09_Responsibility_Infographic.pdf",
+        "coachesInfographic": "Lesson_09_Responsibility_Coaches_Infographic.pdf"
+      },
+      "videos": {
+        "brief": "https://youtu.be/iXBMM-2aItw",
+        "parent": "",
+        "coachesCorner": "https://youtu.be/OMJGQwgFk5M",
+        "coachesBrief": "https://youtu.be/3kTqnoMxf3E"
+      },
+      "checkInWord": "Responsibility",
+      "takeaway": "Owning your part is the first step to changing your situation.",
+      "action": "Take responsibility for one thing this week instead of blaming someone else.",
+      "icebreaker": "",
+      "folderId": "1d66VPq5nEG1roVu5PgtkW_EOjoP72Sq6",
+      "fileIds": {
+        "workbook": "",
+        "coachesCard": "",
+        "infographic": "",
+        "coachesInfographic": ""
+      }
+    },
+    {
+      "number": 10,
+      "name": "Courage",
+      "folder": "Lesson_10_Courage",
+      "files": {
+        "workbook": "Lesson_10_Courage_Workbook.pdf",
+        "coachesCard": "Lesson_10_Courage_Coaches_Card.pdf",
+        "infographic": "Lesson_10_Courage_Infographic.pdf",
+        "coachesInfographic": "Lesson_10_Courage_Coaches_Infographic.pdf"
+      },
+      "videos": {
+        "brief": "https://youtu.be/Mu15T5nHS_0",
+        "parent": "https://youtu.be/cSvAfOdvzp4",
+        "coachesCorner": "https://youtu.be/U_tPEHyLbM0",
+        "coachesBrief": "https://youtu.be/fGdZCSHIRdQ"
+      },
+      "checkInWord": "Courage",
+      "takeaway": "Courage is not the absence of fear, it is acting anyway.",
+      "action": "Do one thing this week that scares you a little but is the right move.",
+      "icebreaker": "",
+      "folderId": "1l4jqqenJW93adhX9jYgcTK5JEw6CnkNB",
+      "fileIds": {
+        "workbook": "",
+        "coachesCard": "",
+        "infographic": "",
+        "coachesInfographic": ""
+      }
+    },
+    {
+      "number": 11,
+      "name": "Initiative",
+      "folder": "Lesson_11_Initiative",
+      "files": {
+        "workbook": "Lesson_11_Initiative_Workbook.pdf",
+        "coachesCard": "Lesson_11_Initiative_Coaches_Card.pdf",
+        "infographic": "Lesson_11_Initiative_Infographic.pdf",
+        "coachesInfographic": "Lesson_11_Initiative_Coaches_Infographic.pdf"
+      },
+      "videos": {
+        "brief": "https://youtu.be/aE-R5BHYRjY",
+        "parent": "https://youtu.be/RLOWO9P-VZI",
+        "coachesCorner": "https://youtu.be/vncw6DVNPMQ",
+        "coachesBrief": "https://youtu.be/03avRqmKksg"
+      },
+      "checkInWord": "Initiative",
+      "takeaway": "Do not wait to be told. See what needs doing and do it.",
+      "action": "Start one thing this week without being asked.",
+      "icebreaker": "",
+      "folderId": "1kAd3tHUhrk_2FM-dmtw-_7KjDf2wP2-K",
+      "fileIds": {
+        "workbook": "",
+        "coachesCard": "",
+        "infographic": "",
+        "coachesInfographic": ""
+      }
+    },
+    {
+      "number": 12,
+      "name": "Priorities",
+      "folder": "Lesson_12_Priorities",
+      "files": {
+        "workbook": "Lesson_12_Priorities_Workbook.pdf",
+        "coachesCard": "Lesson_12_Priorities_Coaches_Card.pdf",
+        "infographic": "Lesson_12_Priorities_Infographic.pdf",
+        "coachesInfographic": "Lesson_12_Priorities_Coaches_Infographic.pdf"
+      },
+      "videos": {
+        "brief": "https://youtu.be/rrlhh3KP5Qs",
+        "parent": "https://youtu.be/I0KmbZkdhO8",
+        "coachesCorner": "https://youtu.be/mGfQVFCZLeE",
+        "coachesBrief": "https://youtu.be/ZHmJI_JRPgM"
+      },
+      "checkInWord": "Priorities",
+      "takeaway": "You cannot do everything, so choose what matters most.",
+      "action": "Pick the most important thing in your week and do it first, before the easy stuff.",
+      "icebreaker": "",
+      "folderId": "1jU28lURpndv-CyETGW42dTS16rNzUlxz",
+      "fileIds": {
+        "workbook": "",
+        "coachesCard": "",
+        "infographic": "",
+        "coachesInfographic": ""
+      }
+    },
+    {
+      "number": 13,
+      "name": "Teachability",
+      "folder": "Lesson_13_Teachability",
+      "files": {
+        "workbook": "Lesson_13_Teachability_Workbook.pdf",
+        "coachesCard": "Lesson_13_Teachability_Coaches_Card.pdf",
+        "infographic": "Lesson_13_Teachability_Infographic.pdf",
+        "coachesInfographic": "Lesson_13_Teachability_Coaches_Infographic.pdf"
+      },
+      "videos": {
+        "brief": "https://youtu.be/YCxBHpiDtXI",
+        "parent": "https://youtu.be/tV2uuU4q21U",
+        "coachesCorner": "https://youtu.be/hSpkbe6SgPU",
+        "coachesBrief": "https://youtu.be/ba-eLs_kB44"
+      },
+      "checkInWord": "Teachability",
+      "takeaway": "The day you think you know it all is the day you stop growing.",
+      "action": "Ask someone to teach you something this week and actually listen.",
+      "icebreaker": "",
+      "folderId": "1UTdvI9TMdH2P9vLbeStDOO_FxvmGdOD4",
+      "fileIds": {
+        "workbook": "",
+        "coachesCard": "",
+        "infographic": "",
+        "coachesInfographic": ""
+      }
+    },
+    {
+      "number": 14,
+      "name": "Self-Discipline",
+      "folder": "Lesson_14_Self_Discipline",
+      "files": {
+        "workbook": "Lesson_14_Self_Discipline_Workbook.pdf",
+        "coachesCard": "Lesson_14_Self_Discipline_Coaches_Card.pdf",
+        "infographic": "Lesson_14_Self_Discipline_Infographic.pdf",
+        "coachesInfographic": "Lesson_14_Self_Discipline_Coaches_Infographic.pdf"
+      },
+      "videos": {
+        "brief": "https://youtu.be/95zMKrG3TLk",
+        "parent": "https://youtu.be/-vxVjzaj4k4",
+        "coachesCorner": "https://youtu.be/KxeVP977F7s",
+        "coachesBrief": "https://youtu.be/moG9b8NMmuA"
+      },
+      "checkInWord": "Self-Discipline",
+      "takeaway": "Discipline is choosing what you want most over what you want right now.",
+      "action": "Say no to one easy distraction this week to get to something better.",
+      "icebreaker": "",
+      "folderId": "1XmS9NuGFS6XDF7kN6WwPV9NxMRMGunEm",
+      "fileIds": {
+        "workbook": "",
+        "coachesCard": "",
+        "infographic": "",
+        "coachesInfographic": ""
+      }
+    },
+    {
+      "number": 15,
+      "name": "Resilience",
+      "folder": "Lesson_15_Resilience",
+      "files": {
+        "workbook": "Lesson_15_Resilience_Workbook.pdf",
+        "coachesCard": "Lesson_15_Resilience_Coaches_Card.pdf",
+        "infographic": "Lesson_15_Resilience_Infographic.pdf",
+        "coachesInfographic": "Lesson_15_Resilience_Coaches_Infographic.pdf"
+      },
+      "videos": {
+        "brief": "",
+        "parent": "https://youtu.be/hlM4PRPOJJ8",
+        "coachesCorner": "",
+        "coachesBrief": "https://youtu.be/Donx4Og7q8k"
+      },
+      "checkInWord": "Resilience",
+      "takeaway": "You are not measured by how hard you fall, but by how you get back up.",
+      "action": "When something knocks you down this week, name one way you will get back up.",
+      "icebreaker": "",
+      "folderId": "1HtSTPDdwcU5ksKK7ueTp5IIPPaDu5Fi4",
+      "fileIds": {
+        "workbook": "",
+        "coachesCard": "",
+        "infographic": "",
+        "coachesInfographic": ""
+      }
+    },
+    {
+      "number": 16,
+      "name": "Influence",
+      "folder": "Lesson_16_Influence",
+      "files": {
+        "workbook": "Lesson_16_Influence_Workbook.pdf",
+        "coachesCard": "Lesson_16_Influence_Coaches_Card.pdf",
+        "infographic": "Lesson_16_Influence_Infographic.pdf",
+        "coachesInfographic": "Lesson_16_Influence_Coaches_Infographic.pdf"
+      },
+      "videos": {
+        "brief": "",
+        "parent": "https://youtu.be/3mAbydxPmfM",
+        "coachesCorner": "https://youtu.be/zbhqZ9UbvII",
+        "coachesBrief": ""
+      },
+      "checkInWord": "Influence",
+      "takeaway": "You are leading someone whether you mean to or not.",
+      "action": "Set one example this week you would be proud for a younger kid to copy.",
+      "icebreaker": "",
+      "folderId": "1-NMYnUdfDf_zEip4dV6pUtBQMvChMI2M",
+      "fileIds": {
+        "workbook": "",
+        "coachesCard": "",
+        "infographic": "",
+        "coachesInfographic": ""
+      }
+    }
+  ]
+}
