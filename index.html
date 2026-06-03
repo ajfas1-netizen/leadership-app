@@ -882,7 +882,7 @@ function logVisit(){
     sessionStorage.setItem(key,'1');
     fetch(SHEET_URL, {
       method:'POST',
-      body:JSON.stringify({action:'checkin', name:'__visit__', word:'__visit__', lessonNumber:0, lessonName:'__visit__'}),
+      body:JSON.stringify({action:'logVisit'}),
       headers:{'Content-Type':'text/plain'}
     }).catch(function(){});
   }
@@ -890,7 +890,7 @@ function logVisit(){
 function logCoachLogin(){
   fetch(SHEET_URL, {
     method:'POST',
-    body:JSON.stringify({action:'checkin', name:'__coach_login__', word:'__coach__', lessonNumber:0, lessonName:'__coach_login__'}),
+    body:JSON.stringify({action:'logCoachLogin'}),
     headers:{'Content-Type':'text/plain'}
   }).catch(function(){});
 }
