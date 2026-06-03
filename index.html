@@ -568,8 +568,14 @@ const SHEET_URL = 'https://script.google.com/macros/s/AKfycbwNtae2bM5Lheebk_fm0H
 let state = {view:'home', coach:false, demoWindow:false, adminPw:'', adminSettings:null, windowOverride:null};
 
 function embed(id){ return id
-  ? `<div class="video"><iframe src="https://www.youtube.com/embed/${id}" allowfullscreen loading="lazy"></iframe></div>`
+  ? `<div class="video"><iframe src="https://www.youtube.com/embed/${id}?playsinline=1&rel=0" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>`
   : `<div class="missing">Video coming soon for this week.</div>`; }
+
+function embedPdf(id, label){ return id
+  ? `<div style="width:100%;aspect-ratio:8.5/11;border-radius:12px;overflow:hidden;border:1px solid rgba(216,168,72,.3);background:#fff">
+       <iframe src="https://drive.google.com/file/d/${id}/preview" style="width:100%;height:100%;border:0" loading="lazy" allow="autoplay"></iframe>
+     </div>`
+  : `<div class="missing">${label || 'Document'} coming soon.</div>`; }
 
 function windowOpen(){
   if(state.demoWindow) return true;
@@ -634,10 +640,8 @@ function parentView(){
      <div class="action-box">${l.action}</div>
    </div>
    <div class="card">
-     <div class="sect-label">Lesson Visual</div>
-     ${l.fileIds.infographic
-       ? '<a class="btn btn-out" href="'+driveUrl(l.fileIds.infographic)+'" target="_blank">View Infographic</a>'
-       : '<div class="missing">Infographic coming soon.</div>'}
+     <div class="sect-label">Lesson Infographic</div>
+     ${embedPdf(l.fileIds.infographic, 'Infographic')}
    </div>
    <div class="row-links">
      <a href="${CFG.website}" target="_blank">MartinCountyPAL.org</a>
@@ -749,8 +753,14 @@ function coachView(){
      <div class="sect-label">This Week's Documents</div>
      ${docLink(l.fileIds.workbook, 'Session Workbook')}
      ${docLink(l.fileIds.coachesCard, 'Coaches Card')}
-     ${docLink(l.fileIds.infographic, 'Infographic')}
-     ${docLink(l.fileIds.coachesInfographic, 'Coaches Infographic')}
+   </div>
+   <div class="card">
+     <div class="sect-label">Infographic</div>
+     ${embedPdf(l.fileIds.infographic, 'Infographic')}
+   </div>
+   <div class="card">
+     <div class="sect-label">Coaches Infographic</div>
+     ${embedPdf(l.fileIds.coachesInfographic, 'Coaches Infographic')}
    </div>
    <div class="card"><div class="sect-label">Icebreaker</div>
      ${l.icebreakers ? `
