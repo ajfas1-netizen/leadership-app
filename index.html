@@ -73,17 +73,12 @@ a.docrow{text-decoration:none;color:var(--cream)}
   text-transform:uppercase;font-size:13px;display:block;margin-bottom:2px}
 .affirm-text{font-style:italic;font-size:17px;line-height:1.6;color:var(--cream);opacity:.95;
   padding:14px 16px;background:rgba(216,168,72,.12);border-left:4px solid var(--gold);border-radius:8px}
-.pdf-thumb{cursor:pointer;border-radius:12px;overflow:hidden;border:1px solid rgba(216,168,72,.3);
-  position:relative;text-align:center;background:var(--green2)}
+.pdf-thumb{display:block;cursor:pointer;border-radius:12px;overflow:hidden;border:1px solid rgba(216,168,72,.3);
+  position:relative;text-align:center;background:var(--green2);text-decoration:none}
 .pdf-thumb img{width:100%;display:block;border-radius:12px}
 .pdf-thumb-label{position:absolute;bottom:0;left:0;right:0;padding:10px;
   background:linear-gradient(transparent,rgba(0,0,0,.7));color:var(--gold-lt);
   font-family:'Oswald';font-weight:600;letter-spacing:1px;font-size:13px;text-transform:uppercase}
-.pdf-overlay{position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.95);
-  display:flex;flex-direction:column;align-items:center}
-.pdf-overlay iframe{flex:1;width:100%;max-width:800px;border:0}
-.pdf-overlay-close{align-self:flex-end;background:none;border:none;color:var(--gold);
-  font-family:'Oswald';font-weight:600;font-size:16px;letter-spacing:1px;padding:14px 20px;cursor:pointer}
 .hidden{display:none}
 .vidcard{display:flex;align-items:center;gap:14px;text-decoration:none;background:#000;
   border:1px solid rgba(216,168,72,.4);border-radius:12px;padding:18px 16px;color:var(--cream)}
@@ -583,20 +578,11 @@ function embed(id){ return id
   : `<div class="missing">Video coming soon for this week.</div>`; }
 
 function pdfThumb(id, label){ return id
-  ? `<div class="pdf-thumb" onclick="openPdfOverlay('${id}')">
+  ? `<a class="pdf-thumb" href="https://drive.google.com/file/d/${id}/view" target="_blank">
        <img src="https://drive.google.com/thumbnail?id=${id}&sz=w400" alt="${label}" loading="lazy">
-       <div class="pdf-thumb-label">Tap to view</div>
-     </div>`
+       <div class="pdf-thumb-label">Tap to view full size</div>
+     </a>`
   : `<div class="missing">${label || 'Document'} coming soon.</div>`; }
-
-function openPdfOverlay(id){
-  const overlay = document.createElement('div');
-  overlay.className = 'pdf-overlay';
-  overlay.onclick = function(e){ if(e.target===overlay) overlay.remove(); };
-  overlay.innerHTML = '<button class="pdf-overlay-close" onclick="this.parentElement.remove()">&times; Close</button>'
-    + '<iframe src="https://docs.google.com/gview?embedded=true&url=https://drive.google.com/uc?id='+id+'" sandbox="allow-scripts allow-same-origin"></iframe>';
-  document.body.appendChild(overlay);
-}
 
 function windowOpen(){
   if(state.demoWindow) return true;
@@ -673,7 +659,6 @@ function parentView(){
 
 function attendanceCard(){
   const open = windowOpen();
-  const toggle = `<button class="demo-toggle" onclick="toggleDemo()">${state.demoWindow?'Turn off':'Turn on'} preview check-in (demo)</button>`;
   if(open){
     return `<div class="card checkin-live">
        <div class="live-dot">&#9679; Check-In Open</div>
@@ -683,12 +668,10 @@ function attendanceCard(){
        <input type="text" id="kidword" placeholder="Tonight's word">
        <button class="btn btn-gold" style="margin-top:8px" onclick="checkIn()">Check In</button>
        <div id="ci-msg"></div>
-       <div class="note">Preview: window uses device time here. The real build checks a trusted Eastern clock and allows a coach override. ${toggle}</div>
      </div>`;
   }
   return `<div class="checkin-quiet">
      <span>Check-in opens Wednesdays 5:30 to 7:30 PM</span>
-     ${toggle}
    </div>`;
 }
 
