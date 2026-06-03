@@ -592,8 +592,9 @@ function pdfThumb(id, label){ return id
 function openPdfOverlay(id){
   const overlay = document.createElement('div');
   overlay.className = 'pdf-overlay';
+  overlay.onclick = function(e){ if(e.target===overlay) overlay.remove(); };
   overlay.innerHTML = '<button class="pdf-overlay-close" onclick="this.parentElement.remove()">&times; Close</button>'
-    + '<iframe src="https://drive.google.com/file/d/'+id+'/preview"></iframe>';
+    + '<iframe src="https://docs.google.com/gview?embedded=true&url=https://drive.google.com/uc?id='+id+'" sandbox="allow-scripts allow-same-origin"></iframe>';
   document.body.appendChild(overlay);
 }
 
