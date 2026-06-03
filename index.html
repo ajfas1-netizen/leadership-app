@@ -850,6 +850,7 @@ function adminLogin(){
     if(d.status==='ok'){
       state.adminPw=pw;
       state.adminSettings=d.settings;
+      state.adminCounts=d.counts||{};
       go('admin');
     } else msg.innerHTML='<div class="err">Incorrect password.</div>';
   })
@@ -872,9 +873,29 @@ function adminView(){
 
   const ovr = s.windowOverride || 'auto';
 
+  const c = state.adminCounts || {};
+
   app.innerHTML=`
    <button class="back" onclick="go('home')">&larr; Sign out</button>
    <div class="gate-title">Admin Panel</div>
+
+   <div class="card">
+     <div class="sect-label">This Week</div>
+     <div style="display:flex;gap:12px;text-align:center">
+       <div style="flex:1;background:rgba(255,255,255,.05);border-radius:10px;padding:14px">
+         <div style="font-family:Oswald;font-size:32px;color:var(--gold-lt)">${c.visits||0}</div>
+         <div style="font-size:12px;opacity:.7;margin-top:4px">Visits</div>
+       </div>
+       <div style="flex:1;background:rgba(255,255,255,.05);border-radius:10px;padding:14px">
+         <div style="font-family:Oswald;font-size:32px;color:var(--gold-lt)">${c.coachLogins||0}</div>
+         <div style="font-size:12px;opacity:.7;margin-top:4px">Coach Logins</div>
+       </div>
+       <div style="flex:1;background:rgba(255,255,255,.05);border-radius:10px;padding:14px">
+         <div style="font-family:Oswald;font-size:32px;color:var(--gold-lt)">${c.checkIns||0}</div>
+         <div style="font-size:12px;opacity:.7;margin-top:4px">Check-Ins</div>
+       </div>
+     </div>
+   </div>
 
    <div class="card">
      <div class="sect-label">Coach Password</div>
