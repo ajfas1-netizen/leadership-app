@@ -604,6 +604,7 @@ function stepLesson(d){ let n=_cur+d; if(n<1)n=16; if(n>16)n=1; _cur=n; render()
 const norm = s => (s||"").toLowerCase().replace(/[\s\-_]/g,"");
 const app = document.getElementById('app');
 const SHEET_URL = 'https://script.google.com/macros/s/AKfycbwNtae2bM5Lheebk_fm0HKxFUCE83Quqy8J_FH0nVf955ArbUIhjfr779QU6VcNAwO5sA/exec';
+function sheetUrl(){ return SHEET_URL + '?_=' + Date.now(); }
 let state = {view:'home', coach:false, demoWindow:false, adminPw:'', adminSettings:null, windowOverride:null};
 
 function embed(id){ return id
@@ -654,7 +655,7 @@ function windowOpen(){
   return dayOk && mins>=oh*60+om && mins<=ch*60+cm;
 }
 // Fetch window override on load
-fetch(SHEET_URL.replace('/exec','/exec'))
+fetch(sheetUrl())
   .then(r=>r.json())
   .then(d=>{ if(d.windowOverride && d.windowOverride!=='auto'){ state.windowOverride=d.windowOverride; render(); }})
   .catch(function(){});
@@ -757,7 +758,7 @@ function checkIn(){
     return;
   }
   msg.innerHTML='<div class="ok">Checking in...</div>';
-  fetch(SHEET_URL, {
+  fetch(sheetUrl(), {
     method: 'POST',
     body: JSON.stringify({name: n, word: w, lessonNumber: L().number, lessonName: L().name}),
     headers: {'Content-Type': 'text/plain'}
@@ -787,7 +788,7 @@ function coachLogin(){
   const pw=document.getElementById('cpw').value;
   const msg=document.getElementById('cg-msg');
   msg.innerHTML='<div class="ok">Verifying...</div>';
-  fetch(SHEET_URL, {
+  fetch(sheetUrl(), {
     method:'POST',
     body:JSON.stringify({action:'coachLogin', password:pw}),
     headers:{'Content-Type':'text/plain'}
@@ -881,7 +882,7 @@ function logVisit(){
   var key = 'pal-visit-' + new Date().toDateString();
   if(!sessionStorage.getItem(key)){
     sessionStorage.setItem(key,'1');
-    fetch(SHEET_URL, {
+    fetch(sheetUrl(), {
       method:'POST',
       body:JSON.stringify({action:'logVisit'}),
       headers:{'Content-Type':'text/plain'}
@@ -889,7 +890,7 @@ function logVisit(){
   }
 }
 function logCoachLogin(){
-  fetch(SHEET_URL, {
+  fetch(sheetUrl(), {
     method:'POST',
     body:JSON.stringify({action:'logCoachLogin'}),
     headers:{'Content-Type':'text/plain'}
@@ -912,7 +913,7 @@ function adminLogin(){
   const pw=document.getElementById('apw').value;
   const msg=document.getElementById('ag-msg');
   msg.innerHTML='<div class="ok">Verifying...</div>';
-  fetch(SHEET_URL, {
+  fetch(sheetUrl(), {
     method:'POST',
     body:JSON.stringify({action:'adminLogin', password:pw}),
     headers:{'Content-Type':'text/plain'}
@@ -1019,7 +1020,7 @@ function saveCoachPw(){
   const msg = document.getElementById('cpw-msg');
   if(!pw){ msg.innerHTML='<div class="status-msg status-err">Password cannot be empty.</div>'; return; }
   msg.innerHTML='<div class="status-msg">Saving...</div>';
-  fetch(SHEET_URL, {
+  fetch(sheetUrl(), {
     method:'POST',
     body:JSON.stringify({action:'saveCoachPassword', adminPassword:state.adminPw, coachPassword:pw}),
     headers:{'Content-Type':'text/plain'}
@@ -1037,7 +1038,7 @@ function saveCoachPw(){
 function saveOverride(val){
   const msg = document.getElementById('ovr-msg');
   msg.innerHTML='<div class="status-msg">Saving...</div>';
-  fetch(SHEET_URL, {
+  fetch(sheetUrl(), {
     method:'POST',
     body:JSON.stringify({action:'saveWindowOverride', adminPassword:state.adminPw, windowOverride:val}),
     headers:{'Content-Type':'text/plain'}
@@ -1068,7 +1069,7 @@ function addEvent(){
   if(rsvp) evt.rsvp = rsvp;
   events.push(evt);
   msg.innerHTML='<div class="status-msg">Saving...</div>';
-  fetch(SHEET_URL, {
+  fetch(sheetUrl(), {
     method:'POST',
     body:JSON.stringify({action:'saveEvents', adminPassword:state.adminPw, events:events}),
     headers:{'Content-Type':'text/plain'}
@@ -1086,7 +1087,7 @@ function addEvent(){
 function removeEvent(idx){
   const events = state.adminSettings.events || [];
   events.splice(idx,1);
-  fetch(SHEET_URL, {
+  fetch(sheetUrl(), {
     method:'POST',
     body:JSON.stringify({action:'saveEvents', adminPassword:state.adminPw, events:events}),
     headers:{'Content-Type':'text/plain'}
